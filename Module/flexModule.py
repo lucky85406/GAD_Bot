@@ -1,4 +1,4 @@
-def transit():
+def transit(sp, ep):
     contents = {
         "type": "bubble",
         "size": "mega",
@@ -18,7 +18,7 @@ def transit():
                         },
                         {
                             "type": "text",
-                            "text": "Akihabara",
+                            "text": sp,
                             "color": "#ffffff",
                             "size": "xl",
                             "flex": 4,
@@ -38,7 +38,7 @@ def transit():
                         },
                         {
                             "type": "text",
-                            "text": "Shinjuku",
+                            "text": ep,
                             "color": "#ffffff",
                             "size": "xl",
                             "flex": 4,
