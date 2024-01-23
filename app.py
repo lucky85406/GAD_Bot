@@ -8,7 +8,7 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, FlexSendMessage
 )
-from Module.flexModule import transit
+from Module.flexModule import transit, T2toEGAS
 
 app = Flask(__name__)
 
@@ -57,10 +57,18 @@ def function(event):
                                                     preview_image_url='https://i.imgur.com/Pw5ZxG1.jpg'))
     elif Ukey() == "長興線":
         line_bot_api.reply_message(event.reply_token,
-                                   FlexSendMessage(alt_text='hi', contents=transit("A10山鼻站", "T2第二航廈")))
+                                   FlexSendMessage(alt_text='hi', contents=T2toEGAS()))
     elif Ukey() == "A15線":
         line_bot_api.reply_message(event.reply_token,
                                    FlexSendMessage(alt_text='hi', contents=transit("廠辦園區", "長興園區")))
+    elif Ukey() == "T2 to EGAS":
+        line_bot_api.reply_message(event.reply_token,
+                                   ImageSendMessage(original_content_url="https://i.imgur.com/OAKjodG.jpg",
+                                                    preview_image_url='https://i.imgur.com/OAKjodG.jpg'))
+    elif Ukey() == "EGAS to T2":
+        line_bot_api.reply_message(event.reply_token,
+                                   ImageSendMessage(original_content_url="https://i.imgur.com/ZaP6Zpk.jpg",
+                                                    preview_image_url='https://i.imgur.com/ZaP6Zpk.jpg'))
     else:
         line_bot_api.reply_message(event.reply_token,
                                    TextSendMessage(text="服務開發中!"))

@@ -313,3 +313,51 @@ def transit(sp, ep):
         }
     }
     return contents
+
+
+def T2toEGAS():
+    contents = {
+        "type": "bubble",
+        "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "長興線",
+                    "weight": "bold",
+                    "size": "xl",
+                    "align": "center"
+                }
+            ]
+        },
+        "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "spacing": "sm",
+            "contents": [
+                {
+                    "type": "button",
+                    "style": "link",
+                    "height": "sm",
+                    "action": {
+                        "type": "message",
+                        "label": "T2 to EGAS",
+                        "text": "T2 to EGAS"
+                    }
+                },
+                {
+                    "type": "button",
+                    "style": "link",
+                    "height": "sm",
+                    "action": {
+                        "type": "message",
+                        "label": "EGAS to T2",
+                        "text": "EGAS to T2"
+                    }
+                }
+            ],
+            "flex": 0
+        }
+    }
+    return contents
