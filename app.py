@@ -63,7 +63,9 @@ def function(event):
 
     if Ukey() == "廠辦線":
         line_bot_api.reply_message(event.reply_token,
-                                   FlexSendMessage(alt_text='hi', contents=AtoB("廠辦線", "EGAS to T2", "T2 to EGAS")))
+                                   FlexSendMessage(alt_text='hi',
+                                                   contents=AtoB("廠辦線", "【去程】EGAS to T2", "EGAS to T2",
+                                                                 "【回程】T2 to EGAS", "T2 to EGAS")))
     elif Ukey() == "EGAS to T2":
         line_bot_api.reply_message(event.reply_token,
                                    ImageSendMessage(original_content_url="https://i.imgur.com/tqTCfWQ.jpg",

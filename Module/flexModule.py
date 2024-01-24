@@ -315,7 +315,7 @@ def transit(sp, ep):
     return contents
 
 
-def AtoB(title,a,b):
+def AtoB(title, a, b, c, d):
     contents = {
         "type": "bubble",
         "body": {
@@ -343,7 +343,7 @@ def AtoB(title,a,b):
                     "action": {
                         "type": "message",
                         "label": a,
-                        "text": a
+                        "text": b
                     }
                 },
                 {
@@ -352,8 +352,8 @@ def AtoB(title,a,b):
                     "height": "sm",
                     "action": {
                         "type": "message",
-                        "label": b,
-                        "text": b
+                        "label": c,
+                        "text": d
                     }
                 }
             ],
