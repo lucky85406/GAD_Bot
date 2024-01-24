@@ -9,12 +9,18 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, FlexSendMessage
 )
 from Module.flexModule import transit, T2toEGAS
+import json
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi(
-    'BedaiCocJPX00F/9FaqlB9DjzZHtviqXZLo5LZNFO6dVSaLs52kaZm6jkQNy8IWNI/ozkRIFFqrxaMC8qLim1Uu0/G3I3TyXBCZ8ZmmuRW+CIEiP9wle1vHYEKll0XFxYUrjB5c8KgOeuSN+V9Ev+wdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('3861ce04f88b821a5e7199958d42459e')
+with open("config.txt", "r") as f:
+    content = f.read()
+    json_obj = json.loads(content)
+    CHANNEL_ACCESS_TOKEN = json_obj["CHANNEL_ACCESS_TOKEN"]
+    CHANNEL_SECRET = json_obj["CHANNEL_SECRET"]
+
+line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
+handler = WebhookHandler(CHANNEL_SECRET)
 
 
 @app.route("/")
