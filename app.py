@@ -12,6 +12,8 @@ from linebot.models import (
 )
 from Module.flexModule import transit, T2toEGAS
 import json
+import threading
+import requests
 
 app = Flask(__name__)
 
@@ -81,6 +83,19 @@ def function(event):
         line_bot_api.reply_message(event.reply_token,
                                    TextSendMessage(text="服務開發中!"))
 
+
+def wake_up_render():
+    while True:
+        url = "https://gadtransit.onrender.com"
+        res = requests.get(url)
+        if res.status_code == 200:
+            print("awaking!!")
+        else:
+            print("awaking error!!")
+        time.sleep(60)
+
+
+threading.Thread(target=wake_up_render).start()
 
 # 執行
 if __name__ == "__main__":
