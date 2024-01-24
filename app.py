@@ -1,3 +1,5 @@
+import time
+
 from flask import Flask, request, abort
 from linebot import (
     LineBotApi, WebhookHandler
@@ -10,6 +12,18 @@ from linebot.models import (
 )
 from Module.flexModule import transit, T2toEGAS
 import json
+import schedule
+
+
+def my_schedule():
+    print("Running!!")
+
+
+job = schedule.Job(my_schedule, interval=60)
+schedule.schedule(job)
+while True:
+    schedule.run_pending()
+    time.sleep(60)
 
 app = Flask(__name__)
 
