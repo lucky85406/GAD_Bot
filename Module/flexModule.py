@@ -98,7 +98,7 @@ def transit(sp, ep):
                         },
                         {
                             "type": "text",
-                            "text": "Akihabara",
+                            "text": sp,
                             "gravity": "center",
                             "flex": 4,
                             "size": "sm"
@@ -203,7 +203,7 @@ def transit(sp, ep):
                         },
                         {
                             "type": "text",
-                            "text": "Ochanomizu",
+                            "text": ep,
                             "gravity": "center",
                             "flex": 4,
                             "size": "sm"
@@ -300,7 +300,7 @@ def transit(sp, ep):
                         },
                         {
                             "type": "text",
-                            "text": "Shinjuku",
+                            "text": sp,
                             "gravity": "center",
                             "flex": 4,
                             "size": "sm"
