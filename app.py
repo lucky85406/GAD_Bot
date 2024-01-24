@@ -10,7 +10,7 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, FlexSendMessage
 )
-from Module.flexModule import transit, T2toEGAS
+from Module.flexModule import transit, AtoB
 import json
 import threading
 import requests
@@ -61,24 +61,36 @@ def function(event):
     def Ukey():
         return event.message.text
 
-    if Ukey() == "交通車時刻表":
+    if Ukey() == "廠辦線":
         line_bot_api.reply_message(event.reply_token,
-                                   ImageSendMessage(original_content_url="https://i.imgur.com/Pw5ZxG1.jpg",
-                                                    preview_image_url='https://i.imgur.com/Pw5ZxG1.jpg'))
-    elif Ukey() == "長興線":
-        line_bot_api.reply_message(event.reply_token,
-                                   FlexSendMessage(alt_text='hi', contents=T2toEGAS()))
-    elif Ukey() == "A15線":
-        line_bot_api.reply_message(event.reply_token,
-                                   FlexSendMessage(alt_text='hi', contents=transit("廠辦園區", "長興園區")))
-    elif Ukey() == "T2 to EGAS":
-        line_bot_api.reply_message(event.reply_token,
-                                   ImageSendMessage(original_content_url="https://i.imgur.com/OAKjodG.jpg",
-                                                    preview_image_url='https://i.imgur.com/OAKjodG.jpg'))
+                                   FlexSendMessage(alt_text='hi', contents=AtoB("廠辦線", "EGAS to T2", "T2 to EGAS")))
     elif Ukey() == "EGAS to T2":
         line_bot_api.reply_message(event.reply_token,
-                                   ImageSendMessage(original_content_url="https://i.imgur.com/ZaP6Zpk.jpg",
-                                                    preview_image_url='https://i.imgur.com/ZaP6Zpk.jpg'))
+                                   ImageSendMessage(original_content_url="https://i.imgur.com/tqTCfWQ.jpg",
+                                                    preview_image_url='https://i.imgur.com/tqTCfWQ.jpg'))
+    elif Ukey() == "T2 to EGAS":
+        line_bot_api.reply_message(event.reply_token,
+                                   ImageSendMessage(original_content_url="https://i.imgur.com/NPhQEHk.jpg",
+                                                    preview_image_url='https://i.imgur.com/NPhQEHk.jpg'))
+    elif Ukey() == "長興線":
+        line_bot_api.reply_message(event.reply_token,
+                                   ImageSendMessage(original_content_url="https://i.imgur.com/tHiDkuI.jpg",
+                                                    preview_image_url='https://i.imgur.com/tHiDkuI.jpg'))
+    elif Ukey() == "A15線":
+        line_bot_api.reply_message(event.reply_token,
+                                   ImageSendMessage(original_content_url="https://i.imgur.com/3CM7rat.jpg",
+                                                    preview_image_url='https://i.imgur.com/3CM7rat.jpg'))
+    elif Ukey() == "T2walk":
+        line_bot_api.reply_message(event.reply_token,
+                                   ImageSendMessage(original_content_url="https://i.imgur.com/58RNnJz.jpg",
+                                                    preview_image_url='https://i.imgur.com/58RNnJz.jpg'))
+    elif Ukey() == "EGASwalk":
+        line_bot_api.reply_message(event.reply_token,
+                                   ImageSendMessage(original_content_url="https://i.imgur.com/8EFEpV3.jpg",
+                                                    preview_image_url='https://i.imgur.com/8EFEpV3.jpg'))
+    elif Ukey() == "information":
+        line_bot_api.reply_message(event.reply_token,
+                                   TextSendMessage(text="服務開發中!"))
     else:
         line_bot_api.reply_message(event.reply_token,
                                    TextSendMessage(text="服務開發中!"))

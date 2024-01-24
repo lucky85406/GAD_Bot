@@ -315,7 +315,7 @@ def transit(sp, ep):
     return contents
 
 
-def T2toEGAS():
+def AtoB(title,a,b):
     contents = {
         "type": "bubble",
         "body": {
@@ -324,7 +324,7 @@ def T2toEGAS():
             "contents": [
                 {
                     "type": "text",
-                    "text": "長興線",
+                    "text": title,
                     "weight": "bold",
                     "size": "xl",
                     "align": "center"
@@ -342,8 +342,8 @@ def T2toEGAS():
                     "height": "sm",
                     "action": {
                         "type": "message",
-                        "label": "T2 to EGAS",
-                        "text": "T2 to EGAS"
+                        "label": a,
+                        "text": a
                     }
                 },
                 {
@@ -352,8 +352,8 @@ def T2toEGAS():
                     "height": "sm",
                     "action": {
                         "type": "message",
-                        "label": "EGAS to T2",
-                        "text": "EGAS to T2"
+                        "label": b,
+                        "text": b
                     }
                 }
             ],
