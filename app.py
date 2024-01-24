@@ -92,7 +92,7 @@ def wake_up_render():
             print("awaking!!")
         else:
             print("awaking error!!")
-        time.sleep(60)
+        time.sleep(870)
 
 
 threading.Thread(target=wake_up_render).start()
