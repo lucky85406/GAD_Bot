@@ -400,9 +400,9 @@ def gigaPage():
                                 {
                                     "type": "button",
                                     "action": {
-                                        "type": "uri",
+                                        "type": "message",
                                         "label": "action",
-                                        "uri": "action"
+                                        "text": "hello"
                                     }
                                 }
                             ],
@@ -415,9 +415,9 @@ def gigaPage():
                                 {
                                     "type": "button",
                                     "action": {
-                                        "type": "uri",
+                                        "type": "message",
                                         "label": "action",
-                                        "uri": "action"
+                                        "text": "hello"
                                     }
                                 }
                             ],
@@ -430,9 +430,9 @@ def gigaPage():
                                 {
                                     "type": "button",
                                     "action": {
-                                        "type": "uri",
+                                        "type": "message",
                                         "label": "action",
-                                        "uri": "action"
+                                        "text": "hello"
                                     }
                                 }
                             ],
