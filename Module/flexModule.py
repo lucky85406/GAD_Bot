@@ -490,9 +490,9 @@ def gigaPage():
                                     "url": "https://i.imgur.com/81NRLeL.png",
                                     "size": "full",
                                     "action": {
-                                        "type": "message",
-                                        "label": "infromation",
-                                        "text": "infromation"
+                                        "type": "uri",
+                                        "label": "map",
+                                        "uri": "https://maps.app.goo.gl/b2UUMqVDuy8oBJDQ8"
                                     }
                                 }
                             ],
