@@ -93,7 +93,7 @@ def function(event):
     elif Ukey() == "information":
         line_bot_api.reply_message(event.reply_token,
                                    FlexSendMessage(alt_text='hi',
-                                                   contents=muitle_page()))
+                                                   contents=muitle_page("A1", "A2")))
     else:
         line_bot_api.reply_message(event.reply_token,
                                    TextSendMessage(text="服務開發中!"))
