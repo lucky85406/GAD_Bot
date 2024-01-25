@@ -8,9 +8,8 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import (
-    MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, FlexSendMessage
+    MessageEvent, TextMessage
 )
-from Module.flexModule import transit, AtoB, gigaPage, positionPage, carouselPage
 from Module.messageModule import chk_mes
 import json
 import threading

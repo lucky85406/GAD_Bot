@@ -628,23 +628,26 @@ def carouselPage():
                             "url": "https://i.imgur.com/tqTCfWQ.jpg",
                             "size": "full",
                             "aspectMode": "fit",
-                            "aspectRatio": "8:13",
+                            "aspectRatio": "8:15",
                             "gravity": "top"
                         }
                     ],
-                    "paddingAll": "0px"
+                    "paddingAll": "0px",
+                    "background": {
+                        "type": "linearGradient",
+                        "angle": "0deg",
+                        "startColor": "#E6E6F2",
+                        "endColor": "#ffffff"
+                    }
                 },
                 "footer": {
                     "type": "box",
                     "layout": "vertical",
                     "contents": [
                         {
-                            "type": "separator"
-                        },
-                        {
                             "type": "text",
                             "text": "搭車地點",
-                            "margin": "lg",
+                            "margin": "none",
                             "weight": "bold",
                             "align": "center",
                             "gravity": "center",
@@ -664,11 +667,18 @@ def carouselPage():
                                     "type": "text",
                                     "text": "廠辦門口",
                                     "weight": "bold",
-                                    "offsetStart": "md"
+                                    "offsetStart": "md",
+                                    "size": "lg"
                                 }
                             ],
-                            "margin": "md",
-                            "alignItems": "center"
+                            "margin": "xl",
+                            "alignItems": "center",
+                            "spacing": "sm",
+                            "action": {
+                                "type": "uri",
+                                "label": "廠辦門口",
+                                "uri": "https://maps.app.goo.gl/KRtZwWuzuQ5aAw3m7"
+                            }
                         },
                         {
                             "type": "box",
@@ -684,13 +694,27 @@ def carouselPage():
                                     "type": "text",
                                     "text": "T2航廈",
                                     "weight": "bold",
-                                    "offsetStart": "md"
+                                    "offsetStart": "md",
+                                    "size": "lg"
                                 }
                             ],
-                            "margin": "md",
-                            "alignItems": "center"
+                            "margin": "xl",
+                            "alignItems": "center",
+                            "spacing": "sm",
+                            "action": {
+                                "type": "uri",
+                                "label": "T2航廈",
+                                "uri": "https://maps.app.goo.gl/GyRYnfMkX2xYgMXz8"
+                            }
                         }
-                    ]
+                    ],
+                    "background": {
+                        "type": "linearGradient",
+                        "angle": "0deg",
+                        "startColor": "#ffffff",
+                        "endColor": "#E6E6F2"
+                    },
+                    "margin": "none"
                 }
             },
             {
