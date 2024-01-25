@@ -527,11 +527,15 @@ def positionPage():
                             "type": "image",
                             "url": "https://i.imgur.com/tqTCfWQ.jpg",
                             "size": "full",
-                            "aspectMode": "fit",
+                            "aspectMode": "cover",
                             "gravity": "center",
                             "flex": 1,
                             "align": "center",
-                            "aspectRatio": "100:100"
+                            "action": {
+                                "type": "message",
+                                "label": "長興線",
+                                "text": "長興線"
+                            }
                         }
                     ]
                 },
