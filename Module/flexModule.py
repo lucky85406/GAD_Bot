@@ -373,21 +373,16 @@ def gigaPage():
             "contents": [
                 {
                     "type": "text",
-                    "text": "Brown Store",
+                    "text": "交通路線",
                     "weight": "bold",
                     "size": "xxl",
-                    "margin": "md"
-                },
-                {
-                    "type": "text",
-                    "text": "Miraina Tower, 4-1-6 Shinjuku, Tokyo",
-                    "size": "xs",
-                    "color": "#aaaaaa",
-                    "wrap": True
+                    "margin": "md",
+                    "gravity": "center",
+                    "align": "center"
                 },
                 {
                     "type": "separator",
-                    "margin": "xxl"
+                    "margin": "lg"
                 },
                 {
                     "type": "box",
@@ -398,47 +393,113 @@ def gigaPage():
                             "layout": "vertical",
                             "contents": [
                                 {
-                                    "type": "button",
+                                    "type": "image",
+                                    "url": "https://i.imgur.com/2QNQMPC.png",
+                                    "size": "full",
                                     "action": {
                                         "type": "message",
-                                        "label": "action",
-                                        "text": "hello"
+                                        "label": "廠辦線",
+                                        "text": "廠辦線"
                                     }
                                 }
                             ],
-                            "backgroundColor": "#D9FFFF"
+                            "cornerRadius": "xl"
                         },
                         {
                             "type": "box",
                             "layout": "vertical",
                             "contents": [
                                 {
-                                    "type": "button",
+                                    "type": "image",
+                                    "url": "https://i.imgur.com/F1b2MrV.png",
+                                    "size": "full",
                                     "action": {
                                         "type": "message",
-                                        "label": "action",
-                                        "text": "hello"
+                                        "label": "長興線",
+                                        "text": "長興線"
                                     }
                                 }
                             ],
-                            "backgroundColor": "#C4E1FF"
+                            "cornerRadius": "xl"
                         },
                         {
                             "type": "box",
                             "layout": "vertical",
                             "contents": [
                                 {
-                                    "type": "button",
+                                    "type": "image",
+                                    "url": "https://i.imgur.com/CCchyXk.png",
+                                    "size": "full",
                                     "action": {
                                         "type": "message",
-                                        "label": "action",
-                                        "text": "hello"
+                                        "label": "A15線",
+                                        "text": "A15線"
                                     }
                                 }
                             ],
-                            "backgroundColor": "#D9FFFF"
+                            "cornerRadius": "xl"
                         }
-                    ]
+                    ],
+                    "cornerRadius": "xl"
+                },
+                {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "image",
+                                    "url": "https://i.imgur.com/2wFRJo0.png",
+                                    "align": "center",
+                                    "size": "full",
+                                    "action": {
+                                        "type": "message",
+                                        "label": "T2Walk",
+                                        "text": "T2Walk"
+                                    }
+                                }
+                            ],
+                            "cornerRadius": "xl"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "image",
+                                    "url": "https://i.imgur.com/nNPwA2S.png",
+                                    "size": "full",
+                                    "action": {
+                                        "type": "message",
+                                        "label": "EGASwalk",
+                                        "text": "EGASwalk"
+                                    }
+                                }
+                            ],
+                            "cornerRadius": "xl"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "image",
+                                    "url": "https://i.imgur.com/81NRLeL.png",
+                                    "size": "full",
+                                    "action": {
+                                        "type": "message",
+                                        "label": "infromation",
+                                        "text": "infromation"
+                                    }
+                                }
+                            ],
+                            "cornerRadius": "xl"
+                        }
+                    ],
+                    "cornerRadius": "xl"
                 }
             ]
         },
