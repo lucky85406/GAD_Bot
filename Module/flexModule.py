@@ -627,7 +627,7 @@ def carouselPage():
                             "type": "image",
                             "url": "https://i.imgur.com/tqTCfWQ.jpg",
                             "size": "full",
-                            "aspectMode": "fit",
+                            "aspectMode": "cover",
                             "aspectRatio": "8:15",
                             "gravity": "top"
                         }
