@@ -11,6 +11,7 @@ from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, FlexSendMessage
 )
 from Module.flexModule import transit, AtoB, gigaPage, positionPage, carouselPage
+from Module.messageModule import chk_mes
 import json
 import threading
 import requests
@@ -61,42 +62,8 @@ def function(event):
     def Ukey():
         return event.message.text
 
-    if Ukey() == "廠辦線":
-        line_bot_api.reply_message(event.reply_token,
-                                   FlexSendMessage(alt_text='hi',
-                                                   contents=AtoB("廠辦線", "【去程】EGAS to T2", "EGAS to T2",
-                                                                 "【回程】T2 to EGAS", "T2 to EGAS")))
-    elif Ukey() == "EGAS to T2":
-        line_bot_api.reply_message(event.reply_token,
-                                   ImageSendMessage(original_content_url="https://i.imgur.com/tqTCfWQ.jpg",
-                                                    preview_image_url='https://i.imgur.com/tqTCfWQ.jpg'))
-    elif Ukey() == "T2 to EGAS":
-        line_bot_api.reply_message(event.reply_token,
-                                   ImageSendMessage(original_content_url="https://i.imgur.com/NPhQEHk.jpg",
-                                                    preview_image_url='https://i.imgur.com/NPhQEHk.jpg'))
-    elif Ukey() == "長興線":
-        line_bot_api.reply_message(event.reply_token,
-                                   ImageSendMessage(original_content_url="https://i.imgur.com/tHiDkuI.jpg",
-                                                    preview_image_url='https://i.imgur.com/tHiDkuI.jpg'))
-    elif Ukey() == "A15線":
-        line_bot_api.reply_message(event.reply_token,
-                                   ImageSendMessage(original_content_url="https://i.imgur.com/3CM7rat.jpg",
-                                                    preview_image_url='https://i.imgur.com/3CM7rat.jpg'))
-    elif Ukey() == "T2walk":
-        line_bot_api.reply_message(event.reply_token,
-                                   FlexSendMessage(alt_text='hi',
-                                                   contents=carouselPage()))
-    elif Ukey() == "EGASwalk":
-        line_bot_api.reply_message(event.reply_token,
-                                   FlexSendMessage(alt_text='hi',
-                                                   contents=positionPage()))
-    elif Ukey() == "information":
-        line_bot_api.reply_message(event.reply_token,
-                                   FlexSendMessage(alt_text='hi',
-                                                   contents=gigaPage()))
-    else:
-        line_bot_api.reply_message(event.reply_token,
-                                   TextSendMessage(text="服務開發中!"))
+    if Ukey() != "":
+        line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
 
 
 def wake_up_render():
