@@ -10,7 +10,7 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, FlexSendMessage
 )
-from Module.flexModule import transit, AtoB
+from Module.flexModule import transit, AtoB, muitle_page
 import json
 import threading
 import requests
@@ -92,7 +92,8 @@ def function(event):
                                                     preview_image_url='https://i.imgur.com/8EFEpV3.jpg'))
     elif Ukey() == "information":
         line_bot_api.reply_message(event.reply_token,
-                                   TextSendMessage(text="服務開發中!"))
+                                   FlexSendMessage(alt_text='hi',
+                                                   contents=muitle_page()))
     else:
         line_bot_api.reply_message(event.reply_token,
                                    TextSendMessage(text="服務開發中!"))

@@ -361,3 +361,135 @@ def AtoB(title, a, b, c, d):
         }
     }
     return contents
+
+
+def muitle_page():
+    contents = {
+        "type": "bubble",
+        "hero": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "交通資訊",
+                    "size": "xl",
+                    "margin": "md",
+                    "weight": "bold",
+                    "align": "center"
+                },
+                {
+                    "type": "separator"
+                }
+            ]
+        },
+        "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "button",
+                                    "action": {
+                                        "type": "uri",
+                                        "label": "action",
+                                        "uri": "action"
+                                    }
+                                }
+                            ],
+                            "backgroundColor": "#C4E1FF"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "button",
+                                    "action": {
+                                        "type": "uri",
+                                        "label": "action",
+                                        "uri": "action"
+                                    }
+                                }
+                            ],
+                            "backgroundColor": "#FFE6D9"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "button",
+                                    "action": {
+                                        "type": "uri",
+                                        "label": "action",
+                                        "uri": "action"
+                                    }
+                                }
+                            ],
+                            "backgroundColor": "#C4E1FF"
+                        }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "button",
+                                    "action": {
+                                        "type": "uri",
+                                        "label": "action",
+                                        "uri": "action"
+                                    }
+                                }
+                            ],
+                            "backgroundColor": "#FFE6D9"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "button",
+                                    "action": {
+                                        "type": "uri",
+                                        "label": "action",
+                                        "uri": "action"
+                                    }
+                                }
+                            ],
+                            "backgroundColor": "#C4E1FF"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "button",
+                                    "action": {
+                                        "type": "uri",
+                                        "label": "action",
+                                        "uri": "action"
+                                    }
+                                }
+                            ],
+                            "backgroundColor": "#FFE6D9"
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+    return contents
