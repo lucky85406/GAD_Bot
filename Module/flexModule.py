@@ -366,6 +366,7 @@ def AtoB(title, a, b, c, d):
 def muitle_page():
     contents = {
         "type": "bubble",
+        "size": "giga",
         "body": {
             "type": "box",
             "layout": "vertical",
