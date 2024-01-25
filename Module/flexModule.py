@@ -510,3 +510,100 @@ def gigaPage():
         }
     }
     return contents
+
+
+def positionPage():
+    contents = {
+        "type": "bubble",
+        "header": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": "https://i.imgur.com/tqTCfWQ.jpg",
+                            "size": "full",
+                            "aspectMode": "fit",
+                            "gravity": "center",
+                            "flex": 1,
+                            "align": "center",
+                            "aspectRatio": "100:100"
+                        }
+                    ]
+                },
+                {
+                    "type": "separator"
+                }
+            ],
+            "paddingAll": "0px"
+        },
+        "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "baseline",
+                            "contents": [
+                                {
+                                    "type": "icon",
+                                    "url": "https://i.imgur.com/Oswmift.png",
+                                    "size": "4xl"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "廠辦大樓大門口",
+                                    "weight": "bold",
+                                    "align": "start",
+                                    "gravity": "center"
+                                }
+                            ],
+                            "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "https://maps.app.goo.gl/XnvP3gGwHwh8WkQv9"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "baseline",
+                            "contents": [
+                                {
+                                    "type": "icon",
+                                    "url": "https://i.imgur.com/Oswmift.png",
+                                    "size": "4xl"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "廠辦大樓大門口",
+                                    "weight": "bold",
+                                    "align": "start",
+                                    "gravity": "center"
+                                }
+                            ],
+                            "action": {
+                                "type": "uri",
+                                "label": "action",
+                                "uri": "https://maps.app.goo.gl/XnvP3gGwHwh8WkQv9"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+    return contents
