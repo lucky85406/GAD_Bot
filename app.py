@@ -10,7 +10,7 @@ from linebot.exceptions import (
 from linebot.models import (
     MessageEvent, TextMessage, TextSendMessage, ImageSendMessage, FlexSendMessage
 )
-from Module.flexModule import transit, AtoB, gigaPage, positionPage
+from Module.flexModule import transit, AtoB, gigaPage, positionPage, carouselPage
 import json
 import threading
 import requests
@@ -84,8 +84,8 @@ def function(event):
                                                     preview_image_url='https://i.imgur.com/3CM7rat.jpg'))
     elif Ukey() == "T2walk":
         line_bot_api.reply_message(event.reply_token,
-                                   ImageSendMessage(original_content_url="https://i.imgur.com/58RNnJz.jpg",
-                                                    preview_image_url='https://i.imgur.com/58RNnJz.jpg'))
+                                   FlexSendMessage(alt_text='hi',
+                                                   contents=carouselPage()))
     elif Ukey() == "EGASwalk":
         line_bot_api.reply_message(event.reply_token,
                                    FlexSendMessage(alt_text='hi',
