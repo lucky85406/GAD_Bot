@@ -655,57 +655,82 @@ def carouselPage():
                         },
                         {
                             "type": "box",
-                            "layout": "baseline",
+                            "layout": "horizontal",
                             "contents": [
                                 {
-                                    "type": "icon",
-                                    "url": "https://i.imgur.com/Oswmift.png",
-                                    "size": "lg",
-                                    "offsetStart": "md"
+                                    "type": "image",
+                                    "url": "https://i.imgur.com/3TJ1ggr.jpg",
+                                    "align": "center",
+                                    "gravity": "top",
+                                    "size": "full",
+                                    "aspectMode": "cover"
                                 },
                                 {
-                                    "type": "text",
-                                    "text": "廠辦門口",
-                                    "weight": "bold",
-                                    "offsetStart": "md",
-                                    "size": "lg"
+                                    "type": "box",
+                                    "layout": "baseline",
+                                    "contents": [
+                                        {
+                                            "type": "icon",
+                                            "url": "https://i.imgur.com/Oswmift.png",
+                                            "size": "lg",
+                                            "offsetStart": "md"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "廠辦門口",
+                                            "weight": "bold",
+                                            "offsetStart": "md",
+                                            "size": "lg"
+                                        }
+                                    ],
+                                    "alignItems": "center",
+                                    "action": {
+                                        "type": "uri",
+                                        "label": "廠辦門口",
+                                        "uri": "https://maps.app.goo.gl/KRtZwWuzuQ5aAw3m7"
+                                    }
                                 }
-                            ],
-                            "margin": "xl",
-                            "alignItems": "center",
-                            "spacing": "sm",
-                            "action": {
-                                "type": "uri",
-                                "label": "廠辦門口",
-                                "uri": "https://maps.app.goo.gl/KRtZwWuzuQ5aAw3m7"
-                            }
+                            ]
                         },
                         {
                             "type": "box",
-                            "layout": "baseline",
+                            "layout": "horizontal",
                             "contents": [
                                 {
-                                    "type": "icon",
-                                    "url": "https://i.imgur.com/Oswmift.png",
-                                    "size": "lg",
-                                    "offsetStart": "md"
+                                    "type": "image",
+                                    "url": "https://i.imgur.com/gW3GN82.jpg",
+                                    "gravity": "top",
+                                    "align": "center",
+                                    "size": "full",
+                                    "aspectMode": "cover"
                                 },
                                 {
-                                    "type": "text",
-                                    "text": "T2航廈",
-                                    "weight": "bold",
-                                    "offsetStart": "md",
-                                    "size": "lg"
+                                    "type": "box",
+                                    "layout": "baseline",
+                                    "contents": [
+                                        {
+                                            "type": "icon",
+                                            "url": "https://i.imgur.com/Oswmift.png",
+                                            "size": "lg",
+                                            "offsetStart": "md"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "T2航廈",
+                                            "weight": "bold",
+                                            "offsetStart": "md",
+                                            "size": "lg"
+                                        }
+                                    ],
+                                    "alignItems": "center",
+                                    "action": {
+                                        "type": "uri",
+                                        "label": "T2航廈",
+                                        "uri": "https://maps.app.goo.gl/GyRYnfMkX2xYgMXz8"
+                                    }
                                 }
                             ],
-                            "margin": "xl",
-                            "alignItems": "center",
-                            "spacing": "sm",
-                            "action": {
-                                "type": "uri",
-                                "label": "T2航廈",
-                                "uri": "https://maps.app.goo.gl/GyRYnfMkX2xYgMXz8"
-                            }
+                            "margin": "md"
                         }
                     ],
                     "background": {
