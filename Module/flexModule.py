@@ -875,3 +875,66 @@ def carouselPage():
         ]
     }
     return contents
+
+
+def multilePage():
+    contents = {
+        "type": "carousel",
+        "contents": [
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": "https://i.imgur.com/7yu4VGK.jpg",
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px"
+                }
+            },
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": "https://i.imgur.com/7yu4VGK.jpg",
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px"
+                }
+            },
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": "https://i.imgur.com/7yu4VGK.jpg",
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px"
+                }
+            }
+        ]
+    }
+    return contents
