@@ -22,7 +22,8 @@ mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去�
                "A15線": return_img("https://i.imgur.com/3CM7rat.jpg", "https://i.imgur.com/3CM7rat.jpg"),
                "T2walk": return_flex("T2行走路線", carouselPage()),
                "EGASwalk": return_flex("EGAS行走路線", positionPage()),
-               "information": return_flex("版型", multilePage())})
+               "information": return_flex("版型", multilePage()),
+               "廠辦線G2": return_img("https://i.imgur.com/7yu4VGK.jpg", "https://i.imgur.com/7yu4VGK.jpg")})
 
 
 def chk_mes(ukey):

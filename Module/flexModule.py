@@ -896,7 +896,12 @@ def multilePage():
                             "aspectRatio": "8.5:20"
                         }
                     ],
-                    "paddingAll": "0px"
+                    "paddingAll": "0px",
+                    "action": {
+                        "type": "uri",
+                        "label": "廠辦線",
+                        "uri": "https://i.imgur.com/7yu4VGK.jpg"
+                    }
                 }
             },
             {
@@ -914,7 +919,12 @@ def multilePage():
                             "aspectRatio": "8.5:20"
                         }
                     ],
-                    "paddingAll": "0px"
+                    "paddingAll": "0px",
+                    "action": {
+                        "type": "message",
+                        "label": "廠辦線",
+                        "text": "廠辦線G2"
+                    }
                 }
             },
             {
