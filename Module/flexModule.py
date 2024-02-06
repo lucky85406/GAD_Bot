@@ -29,7 +29,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "icon",
-                                            "url": "https://i.imgur.com/ahkcJcq.png",
+                                            "url": "https://i.imgur.com/jpcsNZ9.png",
                                             "size": "65px"
                                         }
                                     ],
@@ -41,7 +41,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": title,
+                                            "text": "廠辦線",
                                             "size": "3xl",
                                             "weight": "bold",
                                             "align": "center",
@@ -72,37 +72,48 @@ def AtoB(title, a, b, c, d):
                     "layout": "vertical",
                     "contents": [
                         {
-                            "type": "text",
-                            "text": a,
-                            "weight": "bold",
-                            "align": "center",
-                            "size": "xl",
-                            "action": {
-                                "type": "message",
-                                "label": a,
-                                "text": b
-                            }
+                            "type": "filler"
                         },
                         {
-                            "type": "text",
-                            "text": c,
-                            "weight": "bold",
-                            "size": "xl",
-                            "align": "center",
-                            "margin": "xxl",
-                            "action": {
-                                "type": "message",
-                                "label": c,
-                                "text": d
-                            }
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "【去程】EGAS ＞ T2",
+                                    "weight": "bold",
+                                    "align": "center",
+                                    "size": "xl",
+                                    "action": {
+                                        "type": "message",
+                                        "label": "【去程】EGAS to T2",
+                                        "text": "EGAS to T2"
+                                    }
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "【回程】T2 ＞ EGAS",
+                                    "weight": "bold",
+                                    "size": "xl",
+                                    "align": "center",
+                                    "margin": "50px",
+                                    "action": {
+                                        "type": "message",
+                                        "label": "【回程】T2 to EGAS",
+                                        "text": "T2 to EGAS"
+                                    }
+                                }
+                            ],
+                            "margin": "lg"
                         },
                         {
                             "type": "box",
                             "layout": "vertical",
                             "contents": [],
-                            "margin": "xxl"
+                            "margin": "30px"
                         }
-                    ]
+                    ],
+                    "margin": "150px"
                 }
             },
             {
@@ -122,7 +133,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "icon",
-                                            "url": "https://i.imgur.com/ahkcJcq.png",
+                                            "url": "https://i.imgur.com/jpcsNZ9.png",
                                             "size": "65px"
                                         }
                                     ],
@@ -134,7 +145,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": title,
+                                            "text": "廠辦線",
                                             "size": "3xl",
                                             "weight": "bold",
                                             "align": "center",
@@ -167,27 +178,27 @@ def AtoB(title, a, b, c, d):
                     "contents": [
                         {
                             "type": "text",
-                            "text": a,
+                            "text": "【去程】EGAS to T2",
                             "weight": "bold",
                             "align": "center",
                             "size": "xl",
                             "action": {
                                 "type": "message",
-                                "label": a,
-                                "text": b + "(新)"
+                                "label": "【去程】EGAS to T2",
+                                "text": "EGAS to T2"
                             }
                         },
                         {
                             "type": "text",
-                            "text": c,
+                            "text": "【回程】T2 to EGAS",
                             "weight": "bold",
                             "size": "xl",
                             "align": "center",
                             "margin": "xxl",
                             "action": {
                                 "type": "message",
-                                "label": c,
-                                "text": d + "(新)"
+                                "label": "【回程】T2 to EGAS",
+                                "text": "T2 to EGAS"
                             }
                         },
                         {
