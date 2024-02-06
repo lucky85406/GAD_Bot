@@ -81,3 +81,10 @@ def rmenu_design():
     req = requests.request('POST', 'https://api.line.me/v2/bot/richmenu', headers=headers,
                            data=json.dumps(body).encode('utf-8'))
     print(req.text)
+
+
+def rmenu_show():
+    headers = {'Authorization': f'Bearer {CHANNEL_ACCESS_TOKEN}'}
+    req = requests.request('POST', f'https://api.line.me/v2/bot/user/all/richmenu/76b58e48393f9683c79d6c4683681a34',
+                           headers=headers)
+    print(req.text)
