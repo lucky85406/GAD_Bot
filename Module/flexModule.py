@@ -55,8 +55,7 @@ def AtoB(title, a, b, c, d):
                                             "weight": "bold",
                                             "align": "center"
                                         }
-                                    ],
-                                    "width": "500px"
+                                    ]
                                 }
                             ]
                         },
