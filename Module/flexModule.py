@@ -33,7 +33,7 @@ def AtoB(title, a, b, c, d):
                                             "size": "5xl"
                                         }
                                     ],
-                                    "width": "50px"
+                                    "width": "100px"
                                 },
                                 {
                                     "type": "box",
