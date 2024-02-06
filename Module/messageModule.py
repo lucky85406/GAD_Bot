@@ -1,5 +1,5 @@
 from linebot.models import (TextSendMessage, ImageSendMessage, FlexSendMessage)
-from Module.flexModule import transit, AtoB, gigaPage, positionPage, carouselPage, multilePage
+from Module.flexModule import AtoB, rmenu_design
 
 
 def return_flex(alt_text, contents):
@@ -14,16 +14,8 @@ def return_text(text):
     return TextSendMessage(text=text)
 
 
-mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去程】EGAS to T2", "EGAS to T2",
-                                                    "【回程】T2 to EGAS", "T2 to EGAS")),
-               "EGAS to T2": return_img("https://i.imgur.com/tqTCfWQ.jpg", "https://i.imgur.com/tqTCfWQ.jpg"),
-               "T2 to EGAS": return_img("https://i.imgur.com/NPhQEHk.jpg", "https://i.imgur.com/NPhQEHk.jpg"),
-               "長興線": return_img("https://i.imgur.com/tHiDkuI.jpg", "https://i.imgur.com/tHiDkuI.jpg"),
-               "A15線": return_img("https://i.imgur.com/3CM7rat.jpg", "https://i.imgur.com/3CM7rat.jpg"),
-               "T2walk": return_flex("T2行走路線", carouselPage()),
-               "EGASwalk": return_flex("EGAS行走路線", positionPage()),
-               "information": return_flex("版型", multilePage()),
-               "廠辦線G2": return_img("https://i.imgur.com/7yu4VGK.jpg", "https://i.imgur.com/7yu4VGK.jpg")})
+mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去程】EGAS to T2", "EGAS to T2")),
+               "圖文選單": rmenu_design()})
 
 
 def chk_mes(ukey):
