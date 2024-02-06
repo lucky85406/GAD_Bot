@@ -30,7 +30,7 @@ def AtoB(title, a, b, c, d):
                                         {
                                             "type": "icon",
                                             "url": "https://i.imgur.com/jpcsNZ9.png",
-                                            "size": "5xl"
+                                            "size": "65px"
                                         }
                                     ],
                                     "width": "100px"
@@ -122,7 +122,7 @@ def AtoB(title, a, b, c, d):
                                         {
                                             "type": "icon",
                                             "url": "https://i.imgur.com/jpcsNZ9.png",
-                                            "size": "5xl"
+                                            "size": "65px"
                                         }
                                     ],
                                     "width": "100px"
