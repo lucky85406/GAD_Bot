@@ -41,7 +41,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": title,
+                                            "text": "廠辦線",
                                             "size": "3xl",
                                             "weight": "bold",
                                             "align": "center",
@@ -79,28 +79,140 @@ def AtoB(title, a, b, c, d):
                             "layout": "vertical",
                             "contents": [
                                 {
-                                    "type": "text",
-                                    "text": a,
-                                    "weight": "bold",
-                                    "align": "center",
-                                    "size": "xl",
+                                    "type": "box",
+                                    "layout": "horizontal",
+                                    "contents": [
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "【去程】",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "100px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "EGAS",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "70px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "→",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "50px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "70px"
+                                        }
+                                    ],
+                                    "alignItems": "center",
                                     "action": {
                                         "type": "message",
-                                        "label": a,
-                                        "text": b
+                                        "label": "EGAS to T2",
+                                        "text": "EGAS to T2"
                                     }
                                 },
                                 {
-                                    "type": "text",
-                                    "text": c,
-                                    "weight": "bold",
-                                    "size": "xl",
-                                    "align": "center",
-                                    "margin": "50px",
+                                    "type": "box",
+                                    "layout": "horizontal",
+                                    "contents": [
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "【回程】",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "100px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "70px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "→",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "50px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "EGAS",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "70px"
+                                        }
+                                    ],
+                                    "alignItems": "center",
+                                    "margin": "30px",
                                     "action": {
                                         "type": "message",
-                                        "label": c,
-                                        "text": d
+                                        "label": "T2 to EGAS",
+                                        "text": "T2 to EGAS"
                                     }
                                 }
                             ],
@@ -145,7 +257,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": title,
+                                            "text": "廠辦線",
                                             "size": "3xl",
                                             "weight": "bold",
                                             "align": "center",
@@ -184,28 +296,140 @@ def AtoB(title, a, b, c, d):
                             "layout": "vertical",
                             "contents": [
                                 {
-                                    "type": "text",
-                                    "text": a,
-                                    "weight": "bold",
-                                    "align": "center",
-                                    "size": "xl",
+                                    "type": "box",
+                                    "layout": "horizontal",
+                                    "contents": [
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "【去程】",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "100px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "EGAS",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "70px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "→",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "50px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "70px"
+                                        }
+                                    ],
+                                    "alignItems": "center",
                                     "action": {
                                         "type": "message",
-                                        "label": a,
-                                        "text": b + "(新)"
+                                        "label": "EGAS to T2(新)",
+                                        "text": "EGAS to T2(新)"
                                     }
                                 },
                                 {
-                                    "type": "text",
-                                    "text": c,
-                                    "weight": "bold",
-                                    "size": "xl",
-                                    "align": "center",
-                                    "margin": "50px",
+                                    "type": "box",
+                                    "layout": "horizontal",
+                                    "contents": [
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "【回程】",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "100px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "70px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "→",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "50px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "EGAS",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xl"
+                                                }
+                                            ],
+                                            "width": "70px"
+                                        }
+                                    ],
+                                    "alignItems": "center",
+                                    "margin": "30px",
                                     "action": {
                                         "type": "message",
-                                        "label": c,
-                                        "text": d + "(新)"
+                                        "label": "T2 to EGAS(新)",
+                                        "text": "T2 to EGAS(新)"
                                     }
                                 }
                             ],
