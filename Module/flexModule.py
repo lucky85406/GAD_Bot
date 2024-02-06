@@ -14,6 +14,7 @@ def AtoB(title, a, b, c, d):
         "contents": [
             {
                 "type": "bubble",
+                "size": "giga",
                 "header": {
                     "type": "box",
                     "layout": "vertical",
@@ -105,6 +106,7 @@ def AtoB(title, a, b, c, d):
             },
             {
                 "type": "bubble",
+                "size": "giga",
                 "header": {
                     "type": "box",
                     "layout": "vertical",
