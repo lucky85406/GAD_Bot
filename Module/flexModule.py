@@ -30,7 +30,7 @@ def AtoB(title, a, b, c, d):
                                         {
                                             "type": "icon",
                                             "url": "https://i.imgur.com/jpcsNZ9.png",
-                                            "size": "4xl"
+                                            "size": "5xl"
                                         }
                                     ],
                                     "width": "50px"
@@ -124,7 +124,7 @@ def AtoB(title, a, b, c, d):
                                             "size": "5xl"
                                         }
                                     ],
-                                    "width": "100px"
+                                    "width": "50px"
                                 },
                                 {
                                     "type": "box",
@@ -147,8 +147,7 @@ def AtoB(title, a, b, c, d):
                                             "align": "center",
                                             "color": "#FF0000"
                                         }
-                                    ],
-                                    "width": "150px"
+                                    ]
                                 }
                             ]
                         },
