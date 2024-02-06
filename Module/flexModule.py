@@ -72,9 +72,6 @@ def AtoB(title, a, b, c, d):
                     "layout": "vertical",
                     "contents": [
                         {
-                            "type": "filler"
-                        },
-                        {
                             "type": "box",
                             "layout": "vertical",
                             "contents": [
@@ -90,7 +87,7 @@ def AtoB(title, a, b, c, d):
                                                     "type": "text",
                                                     "text": "【去程】",
                                                     "weight": "bold",
-                                                    "align": "center",
+                                                    "align": "end",
                                                     "size": "xl"
                                                 }
                                             ],
@@ -158,7 +155,7 @@ def AtoB(title, a, b, c, d):
                                                     "type": "text",
                                                     "text": "【回程】",
                                                     "weight": "bold",
-                                                    "align": "center",
+                                                    "align": "end",
                                                     "size": "xl"
                                                 }
                                             ],
@@ -288,9 +285,6 @@ def AtoB(title, a, b, c, d):
                     "layout": "vertical",
                     "contents": [
                         {
-                            "type": "filler"
-                        },
-                        {
                             "type": "box",
                             "layout": "vertical",
                             "contents": [
@@ -306,7 +300,7 @@ def AtoB(title, a, b, c, d):
                                                     "type": "text",
                                                     "text": "【去程】",
                                                     "weight": "bold",
-                                                    "align": "center",
+                                                    "align": "end",
                                                     "size": "xl"
                                                 }
                                             ],
@@ -374,7 +368,7 @@ def AtoB(title, a, b, c, d):
                                                     "type": "text",
                                                     "text": "【回程】",
                                                     "weight": "bold",
-                                                    "align": "center",
+                                                    "align": "end",
                                                     "size": "xl"
                                                 }
                                             ],
