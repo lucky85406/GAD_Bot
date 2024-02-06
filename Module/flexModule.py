@@ -208,15 +208,14 @@ def AtoB(title, a, b, c, d):
                                         }
                                     ],
                                     "alignItems": "center",
-                                    "margin": "30px",
+                                    "margin": "50px",
                                     "action": {
                                         "type": "message",
                                         "label": "T2 to EGAS",
                                         "text": "T2 to EGAS"
                                     }
                                 }
-                            ],
-                            "margin": "lg"
+                            ]
                         },
                         {
                             "type": "box",
@@ -425,15 +424,14 @@ def AtoB(title, a, b, c, d):
                                         }
                                     ],
                                     "alignItems": "center",
-                                    "margin": "30px",
+                                    "margin": "50px",
                                     "action": {
                                         "type": "message",
                                         "label": "T2 to EGAS(新)",
                                         "text": "T2 to EGAS(新)"
                                     }
                                 }
-                            ],
-                            "margin": "lg"
+                            ]
                         },
                         {
                             "type": "box",
