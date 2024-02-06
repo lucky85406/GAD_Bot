@@ -29,7 +29,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "icon",
-                                            "url": "https://i.imgur.com/jpcsNZ9.png",
+                                            "url": "https://i.imgur.com/ahkcJcq.png",
                                             "size": "65px"
                                         }
                                     ],
@@ -41,7 +41,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": "廠辦線",
+                                            "text": title,
                                             "size": "3xl",
                                             "weight": "bold",
                                             "align": "center",
@@ -73,27 +73,27 @@ def AtoB(title, a, b, c, d):
                     "contents": [
                         {
                             "type": "text",
-                            "text": "【去程】EGAS to T2",
+                            "text": a,
                             "weight": "bold",
                             "align": "center",
                             "size": "xl",
                             "action": {
                                 "type": "message",
-                                "label": "【去程】EGAS to T2",
-                                "text": "EGAS to T2"
+                                "label": a,
+                                "text": b
                             }
                         },
                         {
                             "type": "text",
-                            "text": "【回程】T2 to EGAS",
+                            "text": c,
                             "weight": "bold",
                             "size": "xl",
                             "align": "center",
                             "margin": "xxl",
                             "action": {
                                 "type": "message",
-                                "label": "【回程】T2 to EGAS",
-                                "text": "T2 to EGAS"
+                                "label": c,
+                                "text": d
                             }
                         },
                         {
@@ -122,7 +122,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "icon",
-                                            "url": "https://i.imgur.com/jpcsNZ9.png",
+                                            "url": "https://i.imgur.com/ahkcJcq.png",
                                             "size": "65px"
                                         }
                                     ],
@@ -134,7 +134,7 @@ def AtoB(title, a, b, c, d):
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": "廠辦線",
+                                            "text": title,
                                             "size": "3xl",
                                             "weight": "bold",
                                             "align": "center",
@@ -167,27 +167,27 @@ def AtoB(title, a, b, c, d):
                     "contents": [
                         {
                             "type": "text",
-                            "text": "【去程】EGAS to T2",
+                            "text": a,
                             "weight": "bold",
                             "align": "center",
                             "size": "xl",
                             "action": {
                                 "type": "message",
-                                "label": "【去程】EGAS to T2",
-                                "text": "EGAS to T2"
+                                "label": a,
+                                "text": b + "(新)"
                             }
                         },
                         {
                             "type": "text",
-                            "text": "【回程】T2 to EGAS",
+                            "text": c,
                             "weight": "bold",
                             "size": "xl",
                             "align": "center",
                             "margin": "xxl",
                             "action": {
                                 "type": "message",
-                                "label": "【回程】T2 to EGAS",
-                                "text": "T2 to EGAS"
+                                "label": c,
+                                "text": d + "(新)"
                             }
                         },
                         {
@@ -197,6 +197,185 @@ def AtoB(title, a, b, c, d):
                             "margin": "xxl"
                         }
                     ]
+                }
+            }
+        ]
+    }
+    return contents
+
+
+def three_page(a, at, b, bt, c, ct):
+    contents = {
+        "type": "carousel",
+        "contents": [
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": a,
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px",
+                    "action": {
+                        "type": "message",
+                        "label": at,
+                        "text": at
+                    }
+                }
+            },
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": b,
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px",
+                    "action": {
+                        "type": "message",
+                        "label": bt,
+                        "text": bt
+                    }
+                }
+            },
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": c,
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px",
+                    "action": {
+                        "type": "message",
+                        "label": ct,
+                        "text": ct
+                    }
+                }
+            }
+        ]
+    }
+    return contents
+
+
+def four_page(a, at, b, bt, c, ct, d, dt):
+    contents = {
+        "type": "carousel",
+        "contents": [
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": a,
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px",
+                    "action": {
+                        "type": "message",
+                        "label": at,
+                        "text": at
+                    }
+                }
+            },
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": b,
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px",
+                    "action": {
+                        "type": "message",
+                        "label": bt,
+                        "text": bt
+                    }
+                }
+            },
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": c,
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px",
+                    "action": {
+                        "type": "message",
+                        "label": ct,
+                        "text": ct
+                    }
+                }
+            },
+            {
+                "type": "bubble",
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "image",
+                            "url": d,
+                            "size": "full",
+                            "aspectMode": "cover",
+                            "gravity": "top",
+                            "aspectRatio": "8.5:20"
+                        }
+                    ],
+                    "paddingAll": "0px",
+                    "action": {
+                        "type": "message",
+                        "label": dt,
+                        "text": dt
+                    }
                 }
             }
         ]
