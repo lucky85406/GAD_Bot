@@ -14,7 +14,7 @@ def AtoB(title, a, b, c, d):
         "contents": [
             {
                 "type": "bubble",
-                "size": "giga",
+                "size": "mega",
                 "header": {
                     "type": "box",
                     "layout": "vertical",
@@ -53,7 +53,8 @@ def AtoB(title, a, b, c, d):
                                             "text": "(2024.02.15前)",
                                             "size": "xl",
                                             "weight": "bold",
-                                            "align": "center"
+                                            "align": "center",
+                                            "margin": "md"
                                         }
                                     ]
                                 }
@@ -105,7 +106,7 @@ def AtoB(title, a, b, c, d):
             },
             {
                 "type": "bubble",
-                "size": "giga",
+                "size": "mega",
                 "header": {
                     "type": "box",
                     "layout": "vertical",
@@ -124,7 +125,7 @@ def AtoB(title, a, b, c, d):
                                             "size": "5xl"
                                         }
                                     ],
-                                    "width": "50px"
+                                    "width": "100px"
                                 },
                                 {
                                     "type": "box",
@@ -145,7 +146,8 @@ def AtoB(title, a, b, c, d):
                                             "size": "xl",
                                             "weight": "bold",
                                             "align": "center",
-                                            "color": "#FF0000"
+                                            "color": "#FF0000",
+                                            "margin": "md"
                                         }
                                     ]
                                 }
