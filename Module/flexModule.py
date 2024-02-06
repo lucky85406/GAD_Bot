@@ -10,81 +10,165 @@ with open("config.txt", "r") as f:
 
 def AtoB(title, a, b, c, d):
     contents = {
-        "type": "bubble",
-        "body": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-                {
-                    "type": "text",
-                    "text": title,
-                    "weight": "bold",
-                    "size": "xl",
-                    "align": "center"
-                }
-            ]
-        },
-        "footer": {
-            "type": "box",
-            "layout": "vertical",
-            "spacing": "sm",
-            "contents": [
-                {
-                    "type": "button",
-                    "style": "link",
-                    "height": "sm",
-                    "action": {
-                        "type": "message",
-                        "label": a,
-                        "text": b
-                    }
+        "type": "carousel",
+        "contents": [
+            {
+                "type": "bubble",
+                "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "baseline",
+                            "contents": [
+                                {
+                                    "type": "icon",
+                                    "url": "https://i.imgur.com/jpcsNZ9.png",
+                                    "size": "5xl"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "廠辦線",
+                                    "size": "3xl",
+                                    "weight": "bold",
+                                    "align": "start",
+                                    "color": "#02DF82",
+                                    "decoration": "underline"
+                                }
+                            ],
+                            "spacing": "xxl"
+                        },
+                        {
+                            "type": "text",
+                            "text": "(2024.02.15前)",
+                            "size": "xl",
+                            "weight": "bold",
+                            "align": "center"
+                        },
+                        {
+                            "type": "separator",
+                            "margin": "lg"
+                        }
+                    ]
                 },
-                {
-                    "type": "button",
-                    "style": "link",
-                    "height": "sm",
-                    "action": {
-                        "type": "message",
-                        "label": c,
-                        "text": d
-                    }
+                "hero": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": "【去程】EGAS to T2",
+                            "weight": "bold",
+                            "align": "center",
+                            "size": "xl",
+                            "action": {
+                                "type": "message",
+                                "label": "【去程】EGAS to T2",
+                                "text": "EGAS to T2"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "text": "【回程】T2 to EGAS",
+                            "weight": "bold",
+                            "size": "xl",
+                            "align": "center",
+                            "margin": "xxl",
+                            "action": {
+                                "type": "message",
+                                "label": "【回程】T2 to EGAS",
+                                "text": "T2 to EGAS"
+                            }
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [],
+                            "margin": "lg"
+                        }
+                    ]
                 }
-            ],
-            "flex": 0
-        }
+            },
+            {
+                "type": "bubble",
+                "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "baseline",
+                            "contents": [
+                                {
+                                    "type": "icon",
+                                    "url": "https://i.imgur.com/jpcsNZ9.png",
+                                    "size": "5xl"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "廠辦線",
+                                    "size": "3xl",
+                                    "weight": "bold",
+                                    "align": "start",
+                                    "color": "#02DF82",
+                                    "decoration": "underline"
+                                }
+                            ],
+                            "spacing": "xl"
+                        },
+                        {
+                            "type": "text",
+                            "text": "(2024.02.15後)",
+                            "size": "xl",
+                            "weight": "bold",
+                            "align": "center",
+                            "color": "#FF0000"
+                        },
+                        {
+                            "type": "separator",
+                            "margin": "lg"
+                        }
+                    ]
+                },
+                "hero": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": "【去程】EGAS to T2",
+                            "weight": "bold",
+                            "align": "center",
+                            "size": "xl",
+                            "action": {
+                                "type": "message",
+                                "label": "【去程】EGAS to T2",
+                                "text": "EGAS to T2"
+                            }
+                        },
+                        {
+                            "type": "text",
+                            "text": "【回程】T2 to EGAS",
+                            "weight": "bold",
+                            "size": "xl",
+                            "align": "center",
+                            "margin": "xxl",
+                            "action": {
+                                "type": "message",
+                                "label": "【回程】T2 to EGAS",
+                                "text": "T2 to EGAS"
+                            }
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [],
+                            "margin": "lg"
+                        }
+                    ]
+                }
+            }
+        ]
     }
     return contents
-
-
-def rmenu_design():
-    headers = {'Authorization': f'Bearer {CHANNEL_ACCESS_TOKEN}', 'Content-Type': 'application/json'}
-    body = {'size': {'width': 2500, 'height': 1600},
-            'selected': 'true',
-            'name': 'Richmenu demo',
-            'chatBarText': 'Richmenu demo',
-            'areas': [
-                {'bounds': {'x': 341, 'y': 75, 'width': 560, 'height': 340},
-                 'action': {'type': 'message', 'text': '電器'}},
-                {'bounds': {'x': 1434, 'y': 229, 'width': 930, 'height': 340},
-                 'action': {'type': 'message', 'text': '運動用品'}},
-                {'bounds': {'x': 122, 'y': 641, 'width': 560, 'height': 340},
-                 'action': {'type': 'message', 'text': '客服'}},
-                {'bounds': {'x': 1012, 'y': 645, 'width': 560, 'height': 340},
-                 'action': {'type': 'message', 'text': '餐廳'}},
-                {'bounds': {'x': 1813, 'y': 677, 'width': 560, 'height': 340},
-                 'action': {'type': 'message', 'text': '鞋子'}},
-                {'bounds': {'x': 423, 'y': 1203, 'width': 560, 'height': 340},
-                 'action': {'type': 'message', 'text': '美食'}},
-                {'bounds': {'x': 1581, 'y': 1133, 'width': 560, 'height': 340},
-                 'action': {'type': 'message', 'text': '衣服'}}
-            ]}
-    req = requests.request('POST', 'https://api.line.me/v2/bot/richmenu', headers=headers,
-                           data=json.dumps(body).encode('utf-8'))
-    print(req.text)
-
-
-def rmenu_show():
-    headers = {'Authorization': f'Bearer {CHANNEL_ACCESS_TOKEN}'}
-    req = requests.request('POST', f'https://api.line.me/v2/bot/user/all/richmenu/76b58e48393f9683c79d6c4683681a34',
-                           headers=headers)
-    print(req.text)

@@ -1,5 +1,5 @@
 from linebot.models import (TextSendMessage, ImageSendMessage, FlexSendMessage)
-from Module.flexModule import AtoB, rmenu_design
+from Module.flexModule import AtoB
 
 
 def return_flex(alt_text, contents):
@@ -14,7 +14,8 @@ def return_text(text):
     return TextSendMessage(text=text)
 
 
-mesDic = dict({"圖文選單": rmenu_design()})
+mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去程】EGAS to T2", "EGAS to T2",
+                                                    "【回程】T2 to EGAS", "T2 to EGAS"))})
 
 
 def chk_mes(ukey):

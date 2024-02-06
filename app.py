@@ -11,7 +11,6 @@ from linebot.models import (
     MessageEvent, TextMessage
 )
 from Module.messageModule import chk_mes
-from Module.flexModule import rmenu_design,rmenu_show
 import json
 import threading
 import requests
@@ -61,12 +60,7 @@ def function(event):
     # 取得使用者輸入訊息
     def Ukey():
         return event.message.text
-    if Ukey() == "圖文選單":
-        rmenu_design()
-        with open('https://i.imgur.com/PsMN2xb.png', 'rb')as f:
-            line_bot_api.set_rich_menu_image('76b58e48393f9683c79d6c4683681a34', 'image/png', f)
-        rmenu_show()
-    elif Ukey() != "":
+    if Ukey() != "":
         line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
 
 
