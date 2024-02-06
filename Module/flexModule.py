@@ -100,7 +100,7 @@ def AtoB(title, a, b, c, d):
                             "type": "box",
                             "layout": "vertical",
                             "contents": [],
-                            "margin": "lg"
+                            "margin": "xxl"
                         }
                     ]
                 }
@@ -194,7 +194,7 @@ def AtoB(title, a, b, c, d):
                             "type": "box",
                             "layout": "vertical",
                             "contents": [],
-                            "margin": "lg"
+                            "margin": "xxl"
                         }
                     ]
                 }
