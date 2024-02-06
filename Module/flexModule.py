@@ -60,11 +60,6 @@ def AtoB(title, a, b, c, d):
                                     "offsetEnd": "xl"
                                 }
                             ]
-                        },
-                        {
-                            "type": "separator",
-                            "margin": "lg",
-                            "color": "#000000"
                         }
                     ]
                 },
@@ -224,6 +219,13 @@ def AtoB(title, a, b, c, d):
                         }
                     ],
                     "margin": "150px"
+                },
+                "styles": {
+                    "header": {
+                        "backgroundColor": "#4EDED3",
+                        "separator": True,
+                        "separatorColor": "#000000"
+                    }
                 }
             },
             {
@@ -275,11 +277,6 @@ def AtoB(title, a, b, c, d):
                                     "offsetEnd": "xl"
                                 }
                             ]
-                        },
-                        {
-                            "type": "separator",
-                            "margin": "lg",
-                            "color": "#000000"
                         }
                     ]
                 },
@@ -439,6 +436,13 @@ def AtoB(title, a, b, c, d):
                         }
                     ],
                     "margin": "150px"
+                },
+                "styles": {
+                    "header": {
+                        "separator": True,
+                        "separatorColor": "#000000",
+                        "backgroundColor": "#4EDED3"
+                    }
                 }
             }
         ]
