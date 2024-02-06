@@ -63,7 +63,8 @@ def AtoB(title, a, b, c, d):
                         },
                         {
                             "type": "separator",
-                            "margin": "lg"
+                            "margin": "lg",
+                            "color": "#000000"
                         }
                     ]
                 },
@@ -277,7 +278,8 @@ def AtoB(title, a, b, c, d):
                         },
                         {
                             "type": "separator",
-                            "margin": "lg"
+                            "margin": "lg",
+                            "color": "#000000"
                         }
                     ]
                 },
