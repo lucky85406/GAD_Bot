@@ -45,7 +45,7 @@ def AtoB(title, a, b, c, d):
                                             "size": "3xl",
                                             "weight": "bold",
                                             "align": "center",
-                                            "color": "#02DF82",
+                                            "color": "#019858",
                                             "decoration": "underline"
                                         },
                                         {
@@ -137,7 +137,7 @@ def AtoB(title, a, b, c, d):
                                             "size": "3xl",
                                             "weight": "bold",
                                             "align": "center",
-                                            "color": "#02DF82",
+                                            "color": "#019858",
                                             "decoration": "underline"
                                         },
                                         {
