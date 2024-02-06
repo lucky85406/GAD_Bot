@@ -141,7 +141,8 @@ def AtoB(title, a, b, c, d):
                                         "type": "message",
                                         "label": "EGAS to T2",
                                         "text": "EGAS to T2"
-                                    }
+                                    },
+                                    "margin": "xl"
                                 },
                                 {
                                     "type": "box",
@@ -205,7 +206,7 @@ def AtoB(title, a, b, c, d):
                                         }
                                     ],
                                     "alignItems": "center",
-                                    "margin": "50px",
+                                    "margin": "25px",
                                     "action": {
                                         "type": "message",
                                         "label": "T2 to EGAS",
@@ -354,7 +355,8 @@ def AtoB(title, a, b, c, d):
                                         "type": "message",
                                         "label": "EGAS to T2(新)",
                                         "text": "EGAS to T2(新)"
-                                    }
+                                    },
+                                    "margin": "xl"
                                 },
                                 {
                                     "type": "box",
@@ -418,7 +420,7 @@ def AtoB(title, a, b, c, d):
                                         }
                                     ],
                                     "alignItems": "center",
-                                    "margin": "50px",
+                                    "margin": "25px",
                                     "action": {
                                         "type": "message",
                                         "label": "T2 to EGAS(新)",
