@@ -14,8 +14,7 @@ def return_text(text):
     return TextSendMessage(text=text)
 
 
-mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去程】EGAS to T2", "EGAS to T2")),
-               "圖文選單": rmenu_design()})
+mesDic = dict({"圖文選單": rmenu_design()})
 
 
 def chk_mes(ukey):
