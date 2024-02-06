@@ -56,7 +56,8 @@ def AtoB(title, a, b, c, d):
                                             "align": "center",
                                             "margin": "md"
                                         }
-                                    ]
+                                    ],
+                                    "offsetEnd": "xl"
                                 }
                             ]
                         },
@@ -149,7 +150,8 @@ def AtoB(title, a, b, c, d):
                                             "color": "#FF0000",
                                             "margin": "md"
                                         }
-                                    ]
+                                    ],
+                                    "offsetEnd": "xl"
                                 }
                             ]
                         },
