@@ -20,31 +20,44 @@ def AtoB(title, a, b, c, d):
                     "contents": [
                         {
                             "type": "box",
-                            "layout": "baseline",
+                            "layout": "horizontal",
                             "contents": [
                                 {
-                                    "type": "icon",
-                                    "url": "https://i.imgur.com/jpcsNZ9.png",
-                                    "size": "5xl"
+                                    "type": "box",
+                                    "layout": "baseline",
+                                    "contents": [
+                                        {
+                                            "type": "icon",
+                                            "url": "https://i.imgur.com/jpcsNZ9.png",
+                                            "size": "5xl"
+                                        }
+                                    ],
+                                    "width": "100px"
                                 },
                                 {
-                                    "type": "text",
-                                    "text": "廠辦線",
-                                    "size": "3xl",
-                                    "weight": "bold",
-                                    "align": "start",
-                                    "color": "#02DF82",
-                                    "decoration": "underline"
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [
+                                        {
+                                            "type": "text",
+                                            "text": "廠辦線",
+                                            "size": "3xl",
+                                            "weight": "bold",
+                                            "align": "center",
+                                            "color": "#02DF82",
+                                            "decoration": "underline"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "(2024.02.15前)",
+                                            "size": "xl",
+                                            "weight": "bold",
+                                            "align": "center"
+                                        }
+                                    ],
+                                    "width": "150px"
                                 }
-                            ],
-                            "spacing": "xxl"
-                        },
-                        {
-                            "type": "text",
-                            "text": "(2024.02.15前)",
-                            "size": "xl",
-                            "weight": "bold",
-                            "align": "center"
+                            ]
                         },
                         {
                             "type": "separator",
@@ -98,32 +111,45 @@ def AtoB(title, a, b, c, d):
                     "contents": [
                         {
                             "type": "box",
-                            "layout": "baseline",
+                            "layout": "horizontal",
                             "contents": [
                                 {
-                                    "type": "icon",
-                                    "url": "https://i.imgur.com/jpcsNZ9.png",
-                                    "size": "5xl"
+                                    "type": "box",
+                                    "layout": "baseline",
+                                    "contents": [
+                                        {
+                                            "type": "icon",
+                                            "url": "https://i.imgur.com/jpcsNZ9.png",
+                                            "size": "5xl"
+                                        }
+                                    ],
+                                    "width": "100px"
                                 },
                                 {
-                                    "type": "text",
-                                    "text": "廠辦線",
-                                    "size": "3xl",
-                                    "weight": "bold",
-                                    "align": "start",
-                                    "color": "#02DF82",
-                                    "decoration": "underline"
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [
+                                        {
+                                            "type": "text",
+                                            "text": "廠辦線",
+                                            "size": "3xl",
+                                            "weight": "bold",
+                                            "align": "center",
+                                            "color": "#02DF82",
+                                            "decoration": "underline"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "(2024.02.15後)",
+                                            "size": "xl",
+                                            "weight": "bold",
+                                            "align": "center",
+                                            "color": "#FF0000"
+                                        }
+                                    ],
+                                    "width": "150px"
                                 }
-                            ],
-                            "spacing": "xl"
-                        },
-                        {
-                            "type": "text",
-                            "text": "(2024.02.15後)",
-                            "size": "xl",
-                            "weight": "bold",
-                            "align": "center",
-                            "color": "#FF0000"
+                            ]
                         },
                         {
                             "type": "separator",
