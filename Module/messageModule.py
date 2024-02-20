@@ -1,4 +1,4 @@
-from linebot.models import (TextSendMessage, ImageSendMessage, FlexSendMessage)
+from linebot.models import (TextSendMessage, ImageSendMessage, FlexSendMessage, LocationMessage)
 from Module.flexModule import AtoB, three_page, four_page, video_test_page
 
 
@@ -12,6 +12,10 @@ def return_img(original_content_url, preview_image_url):
 
 def return_text(text):
     return TextSendMessage(text=text)
+
+
+def return_locat(title, address, x, y):
+    return LocationMessage(title=title, address=address, latitude=x, longitude=y)
 
 
 mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去程】EGAS > T2", "EGAS to T2",
@@ -33,7 +37,8 @@ mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去�
                                                                         "https://i.imgur.com/eWTKvs0.jpg",
                                                                         "廠辦8(新)")),
                "EGASWalk": return_img("https://i.imgur.com/zeyrBUj.jpg", "https://i.imgur.com/zeyrBUj.jpg"),
-               "影片測試": return_flex("Video TEST", video_test_page())})
+               "影片測試": return_flex("Video TEST", video_test_page()),
+               "地點測試": return_locat("Test", "搭車點", 25.077169, 121.233441)})
 
 
 def chk_mes(ukey):
