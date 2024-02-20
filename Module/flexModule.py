@@ -671,7 +671,7 @@ def video_test_page():
                     "action": {
                         "type": "uri",
                         "label": "action",
-                        "uri": "https://youtu.be/YVo1K0SzF9Y?si=9kZC3NY3qd0Cj2i_"
+                        "uri": "https://youtu.be/7kYqbCMcQyA"
                     }
                 }
             ]
