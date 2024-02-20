@@ -631,50 +631,173 @@ def four_page(a, at, b, bt, c, ct, d, dt):
 
 def video_test_page():
     contents = {
-        "type": "bubble",
-        "header": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-                {
-                    "type": "text",
-                    "text": "EGAS to T2 動線",
-                    "size": "xxl",
-                    "align": "center"
+        "type": "carousel",
+        "contents": [
+            {
+                "type": "bubble",
+                "size": "mega",
+                "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "horizontal",
+                            "contents": [
+                                {
+                                    "type": "box",
+                                    "layout": "baseline",
+                                    "contents": [
+                                        {
+                                            "type": "icon",
+                                            "url": "https://i.imgur.com/0xOfojx.png",
+                                            "size": "70px"
+                                        }
+                                    ],
+                                    "width": "70px"
+                                },
+                                {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [
+                                        {
+                                            "type": "text",
+                                            "text": "EGAS to A14a",
+                                            "weight": "bold",
+                                            "align": "center",
+                                            "color": "#019858",
+                                            "decoration": "underline",
+                                            "gravity": "center",
+                                            "size": "25px"
+                                        }
+                                    ],
+                                    "offsetEnd": "xl",
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                    "width": "220px"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator"
+                        }
+                    ]
                 },
-                {
-                    "type": "separator"
+                "hero": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "box",
+                                    "layout": "horizontal",
+                                    "contents": [
+                                        {
+                                            "type": "box",
+                                            "layout": "baseline",
+                                            "contents": [
+                                                {
+                                                    "type": "icon",
+                                                    "url": "https://i.imgur.com/yDuhMfq.png",
+                                                    "size": "5xl"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "justifyContent": "center",
+                                            "width": "70px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "行走路線平面圖",
+                                                    "weight": "bold",
+                                                    "align": "center",
+                                                    "size": "xxl",
+                                                    "decoration": "underline",
+                                                    "action": {
+                                                        "type": "message",
+                                                        "label": "action",
+                                                        "text": "EGASWalk"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "alignItems": "center",
+                                    "action": {
+                                        "type": "message",
+                                        "label": "atob",
+                                        "text": "atob"
+                                    },
+                                    "margin": "xl"
+                                },
+                                {
+                                    "type": "box",
+                                    "layout": "horizontal",
+                                    "contents": [
+                                        {
+                                            "type": "box",
+                                            "layout": "baseline",
+                                            "contents": [
+                                                {
+                                                    "type": "icon",
+                                                    "url": "https://i.imgur.com/7cuHLc7.png",
+                                                    "size": "5xl"
+                                                }
+                                            ],
+                                            "justifyContent": "center",
+                                            "alignItems": "center",
+                                            "width": "70px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "行走路線影片",
+                                                    "align": "center",
+                                                    "size": "xxl",
+                                                    "weight": "bold",
+                                                    "decoration": "underline",
+                                                    "action": {
+                                                        "type": "uri",
+                                                        "label": "action",
+                                                        "uri": "https://youtu.be/7kYqbCMcQyA",
+                                                        "altUri": {
+                                                            "desktop": "https://youtu.be/7kYqbCMcQyA"
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    ],
+                                    "alignItems": "center",
+                                    "margin": "25px",
+                                    "action": {
+                                        "type": "message",
+                                        "label": "atob",
+                                        "text": "atob"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [],
+                            "margin": "30px"
+                        }
+                    ],
+                    "margin": "150px"
                 }
-            ]
-        },
-        "hero": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-                {
-                    "type": "text",
-                    "text": "步行路線圖",
-                    "align": "center",
-                    "size": "xxl",
-                    "action": {
-                        "type": "uri",
-                        "label": "action",
-                        "uri": "https://i.imgur.com/zeyrBUj.jpg"
-                    }
-                },
-                {
-                    "type": "text",
-                    "text": "步行路線影片",
-                    "size": "xxl",
-                    "align": "center",
-                    "margin": "xxl",
-                    "action": {
-                        "type": "uri",
-                        "label": "action",
-                        "uri": "https://youtu.be/7kYqbCMcQyA"
-                    }
-                }
-            ]
-        }
+            }
+        ]
     }
     return contents

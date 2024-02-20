@@ -32,6 +32,7 @@ mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去�
                                                                         "https://i.imgur.com/viIue0o.jpg", "廠辦7(新)",
                                                                         "https://i.imgur.com/eWTKvs0.jpg",
                                                                         "廠辦8(新)")),
+               "EGASWalk": return_img("https://i.imgur.com/zeyrBUj.jpg", "https://i.imgur.com/zeyrBUj.jpg"),
                "影片測試": return_flex("Video TEST", video_test_page())})
 
 
