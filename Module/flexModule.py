@@ -627,3 +627,29 @@ def four_page(a, at, b, bt, c, ct, d, dt):
         ]
     }
     return contents
+
+
+def video_test_page():
+    contents = {
+        "type": "bubble",
+        "header": {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+                {
+                    "type": "image",
+                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png"
+                }
+            ]
+        },
+        "hero": {
+            "type": "video",
+            "url": "https://youtu.be/YVo1K0SzF9Y?si=9kZC3NY3qd0Cj2i_",
+            "previewUrl": "https://i.imgur.com/cxXiBbv.jpg",
+            "altContent": {
+                "type": "image",
+                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png"
+            }
+        }
+    }
+    return contents
