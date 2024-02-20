@@ -634,22 +634,47 @@ def video_test_page():
         "type": "bubble",
         "header": {
             "type": "box",
-            "layout": "horizontal",
+            "layout": "vertical",
             "contents": [
                 {
-                    "type": "image",
-                    "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png"
+                    "type": "text",
+                    "text": "EGAS to T2 動線",
+                    "size": "xxl",
+                    "align": "center"
+                },
+                {
+                    "type": "separator"
                 }
             ]
         },
         "hero": {
-            "type": "video",
-            "url": "https://youtu.be/YVo1K0SzF9Y?si=9kZC3NY3qd0Cj2i_",
-            "previewUrl": "https://i.imgur.com/cxXiBbv.jpg",
-            "altContent": {
-                "type": "image",
-                "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/01_1_cafe.png"
-            }
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "步行路線圖",
+                    "align": "center",
+                    "size": "xxl",
+                    "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://i.imgur.com/zeyrBUj.jpg"
+                    }
+                },
+                {
+                    "type": "text",
+                    "text": "步行路線影片",
+                    "size": "xxl",
+                    "align": "center",
+                    "margin": "xxl",
+                    "action": {
+                        "type": "uri",
+                        "label": "action",
+                        "uri": "https://youtu.be/YVo1K0SzF9Y?si=9kZC3NY3qd0Cj2i_"
+                    }
+                }
+            ]
         }
     }
     return contents
