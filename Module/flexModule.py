@@ -702,7 +702,7 @@ def video_test_page():
                                                 {
                                                     "type": "icon",
                                                     "url": "https://i.imgur.com/yDuhMfq.png",
-                                                    "size": "5xl"
+                                                    "size": "4xl"
                                                 }
                                             ],
                                             "alignItems": "center",
@@ -718,7 +718,7 @@ def video_test_page():
                                                     "text": "行走路線平面圖",
                                                     "weight": "bold",
                                                     "align": "center",
-                                                    "size": "xxl",
+                                                    "size": "xl",
                                                     "decoration": "underline",
                                                     "action": {
                                                         "type": "message",
@@ -748,7 +748,7 @@ def video_test_page():
                                                 {
                                                     "type": "icon",
                                                     "url": "https://i.imgur.com/7cuHLc7.png",
-                                                    "size": "5xl"
+                                                    "size": "4xl"
                                                 }
                                             ],
                                             "justifyContent": "center",
@@ -763,7 +763,7 @@ def video_test_page():
                                                     "type": "text",
                                                     "text": "行走路線影片",
                                                     "align": "center",
-                                                    "size": "xxl",
+                                                    "size": "xl",
                                                     "weight": "bold",
                                                     "decoration": "underline",
                                                     "action": {
