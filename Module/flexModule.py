@@ -668,7 +668,7 @@ def video_test_page():
                                             "color": "#019858",
                                             "decoration": "underline",
                                             "gravity": "center",
-                                            "size": "25px"
+                                            "size": "27px"
                                         }
                                     ],
                                     "offsetEnd": "xl",
@@ -702,31 +702,27 @@ def video_test_page():
                                                 {
                                                     "type": "icon",
                                                     "url": "https://i.imgur.com/7IBy7aw.png",
-                                                    "size": "5xl"
-                                                }
-                                            ],
-                                            "alignItems": "flex-end",
-                                            "justifyContent": "center",
-                                            "width": "100px"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [
+                                                    "size": "60px"
+                                                },
                                                 {
                                                     "type": "text",
                                                     "text": "行走路線平面圖",
                                                     "weight": "bold",
-                                                    "align": "center",
+                                                    "align": "start",
                                                     "size": "xl",
                                                     "decoration": "underline",
                                                     "action": {
                                                         "type": "message",
                                                         "label": "action",
                                                         "text": "EGASWalk"
-                                                    }
+                                                    },
+                                                    "gravity": "center",
+                                                    "margin": "xl"
                                                 }
-                                            ]
+                                            ],
+                                            "alignItems": "flex-end",
+                                            "justifyContent": "center",
+                                            "margin": "xxl"
                                         }
                                     ],
                                     "alignItems": "center",
@@ -734,8 +730,7 @@ def video_test_page():
                                         "type": "message",
                                         "label": "atob",
                                         "text": "atob"
-                                    },
-                                    "margin": "xl"
+                                    }
                                 },
                                 {
                                     "type": "box",
@@ -748,21 +743,12 @@ def video_test_page():
                                                 {
                                                     "type": "icon",
                                                     "url": "https://i.imgur.com/cYKPlO2.png",
-                                                    "size": "5xl"
-                                                }
-                                            ],
-                                            "justifyContent": "center",
-                                            "alignItems": "flex-end",
-                                            "width": "100px"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [
+                                                    "size": "60px"
+                                                },
                                                 {
                                                     "type": "text",
                                                     "text": "行走路線影片",
-                                                    "align": "center",
+                                                    "align": "start",
                                                     "size": "xl",
                                                     "weight": "bold",
                                                     "decoration": "underline",
@@ -773,13 +759,18 @@ def video_test_page():
                                                         "altUri": {
                                                             "desktop": "https://youtu.be/7kYqbCMcQyA"
                                                         }
-                                                    }
+                                                    },
+                                                    "gravity": "center",
+                                                    "margin": "xl"
                                                 }
-                                            ]
+                                            ],
+                                            "justifyContent": "center",
+                                            "alignItems": "flex-end",
+                                            "margin": "xxl"
                                         }
                                     ],
                                     "alignItems": "center",
-                                    "margin": "25px",
+                                    "margin": "10px",
                                     "action": {
                                         "type": "message",
                                         "label": "atob",
