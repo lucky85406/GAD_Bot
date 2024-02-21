@@ -58,19 +58,18 @@ def function(event):
     # 取得使用者輸入訊息
     def Ukey():
         return event.message.text
+    line_bot_api.reply_message(
+        event.reply_token,
+        TextSendMessage(
+            text='a quick reply message',
+            quick_reply=QuickReply(
+                items=[
+                    QuickReplyButton(
+                        action=MessageAction(label="message", text="one message")
+                    )
+                ])))
 
-    if Ukey() == "quick1":
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(
-                text='a quick reply message',
-                quick_reply=QuickReply(
-                    items=[
-                        QuickReplyButton(
-                            action=MessageAction(label="message", text="one message")
-                        )
-                    ])))
-    elif Ukey() != "":
+    if Ukey() != "":
         line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
 
 
