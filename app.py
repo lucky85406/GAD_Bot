@@ -23,6 +23,7 @@ with open("config.txt", "r") as f:
 
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
+a = 0
 
 
 @app.route("/")
@@ -58,7 +59,7 @@ def function(event):
     # 取得使用者輸入訊息
     def Ukey():
         return event.message.text
-    a = 0
+
     if a == 0:
         line_bot_api.reply_message(
             event.reply_token,
@@ -70,7 +71,7 @@ def function(event):
                             action=MessageAction(label="message", text="one message")
                         )
                     ])))
-        a +=1
+        a += 1
 
     if Ukey() != "":
         line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
