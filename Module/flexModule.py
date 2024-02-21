@@ -701,7 +701,7 @@ def video_test_page():
                                             "contents": [
                                                 {
                                                     "type": "icon",
-                                                    "url": "https://i.imgur.com/yDuhMfq.png",
+                                                    "url": "https://i.imgur.com/nHGERbB.jpg",
                                                     "size": "4xl"
                                                 }
                                             ],
@@ -747,7 +747,7 @@ def video_test_page():
                                             "contents": [
                                                 {
                                                     "type": "icon",
-                                                    "url": "https://i.imgur.com/7cuHLc7.png",
+                                                    "url": "https://i.imgur.com/7UcbDIQ.jpg",
                                                     "size": "4xl"
                                                 }
                                             ],
