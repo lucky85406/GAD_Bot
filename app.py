@@ -59,7 +59,7 @@ def function(event):
     def Ukey():
         return event.message.text
 
-    if Ukey() == "quick":
+    if Ukey() == "quick1":
         line_bot_api.reply_message(
             event.reply_token,
             TextSendMessage(
