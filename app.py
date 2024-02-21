@@ -59,14 +59,12 @@ def function(event):
     # 取得使用者輸入訊息
     def Ukey():
         return event.message.text
-    while True:
-        now = datetime.datetime.now()
-        nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
-        if nd == "2024/2/21 14:55":
-            line_bot_api.reply_message(event.reply_token, TextSendMessage(text="測試"))
 
-        if Ukey() != "":
-            line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
+    now = datetime.datetime.now()
+    nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
+    if Ukey() != "":
+        # line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=nd))
 
 
 '''
