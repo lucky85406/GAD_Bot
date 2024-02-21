@@ -30,7 +30,7 @@ handler = WebhookHandler(CHANNEL_SECRET)
 @app.route("/")
 def home():
     try:
-        line_bot_api.push_message("U61a0a5800e8265a3ad897623cfbc4e22", TextSendMessage(text='Hello World2!!!'))
+        line_bot_api.push_message("U61a0a5800e8265a3ad897623cfbc4e22", TextSendMessage(text='Hello World3!!!'))
         return 'home OK'
     except:
         print("error")
