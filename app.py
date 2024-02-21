@@ -60,7 +60,37 @@ def function(event):
     # 取得使用者輸入訊息
     def Ukey():
         return event.message.text
-    if Ukey() != "":
+
+    if Ukey() == "quick":
+        line_bot_api.reply_message(
+            event.reply_token,
+            TextSendMessage(
+                text='a quick reply message',
+                quick_reply=QuickReply(
+                    items=[
+                        QuickReplyButton(
+                            action=CameraAction(label="開啟相機吧")
+                        ),
+                        QuickReplyButton(
+                            action=CameraRollAction(label="相機膠捲")
+                        ),
+                        # return a location message
+                        QuickReplyButton(
+                            action=LocationAction(label="位置資訊")
+                        ),
+                        QuickReplyButton(
+                            action=PostbackAction(label="postback", data="postback")
+                        ),
+                        QuickReplyButton(
+                            action=MessageAction(label="message", text="one message")
+                        ),
+                        QuickReplyButton(
+                            action=DatetimePickerAction(label="時間選單",
+                                                        data="date_postback",
+                                                        mode="date")
+                        )
+                    ])))
+    elif Ukey() != "":
         line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
 
 
