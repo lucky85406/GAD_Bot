@@ -755,9 +755,9 @@ def video_test_page():
                                                     "action": {
                                                         "type": "uri",
                                                         "label": "action",
-                                                        "uri": "https://youtu.be/7kYqbCMcQyA",
+                                                        "uri": "https://youtu.be/oRUBLSHzGtg",
                                                         "altUri": {
-                                                            "desktop": "https://youtu.be/7kYqbCMcQyA"
+                                                            "desktop": "https://youtu.be/oRUBLSHzGtg"
                                                         }
                                                     },
                                                     "gravity": "center",

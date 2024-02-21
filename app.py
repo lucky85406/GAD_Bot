@@ -10,7 +10,7 @@ from linebot.exceptions import (
     InvalidSignatureError, LineBotApiError
 )
 from linebot.models import *
-
+from Module.messageModule import chk_mes
 app = Flask(__name__)
 
 with open("config.txt", "r") as f:
@@ -21,11 +21,6 @@ with open("config.txt", "r") as f:
 
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
-uid = "U61a0a5800e8265a3ad897623cfbc4e22"
-try:
-    line_bot_api.push_message(uid, TextSendMessage(text="Hello World7!!"))
-except LineBotApiError as e:
-    raise e
 
 
 @app.route("/")
@@ -62,7 +57,9 @@ def function(event):
 
     now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
-    line_bot_api.reply_message(event.reply_token, TextSendMessage(text="TEST"))
+
+    if Ukey() != "":
+        line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
 
 
 '''
