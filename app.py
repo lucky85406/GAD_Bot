@@ -7,7 +7,7 @@ from linebot import (
     LineBotApi, WebhookHandler
 )
 from linebot.exceptions import (
-    InvalidSignatureError,LineBotApiError
+    InvalidSignatureError, LineBotApiError
 )
 from linebot.models import *
 
@@ -21,9 +21,9 @@ with open("config.txt", "r") as f:
 
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
-
+uid = "U61a0a5800e8265a3ad897623cfbc4e22"
 try:
-    line_bot_api.push_message("U61a0a5800e8265a3ad897623cfbc4e22", TextSendMessage(text="Hello World5!!"))
+    line_bot_api.push_message(uid, TextSendMessage(text="Hello World5!!"))
 except LineBotApiError as e:
     raise e
 
