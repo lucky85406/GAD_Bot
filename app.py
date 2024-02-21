@@ -29,7 +29,11 @@ handler = WebhookHandler(CHANNEL_SECRET)
 
 @app.route("/")
 def home():
-    return 'home OK'
+    try:
+        line_bot_api.push_message("U61a0a5800e8265a3ad897623cfbc4e22", TextSendMessage(text='Hello World!!!'))
+        return 'home OK'
+    except:
+        print("error")
 
 
 # 監聽所有來自 /callback 的 Post Request
