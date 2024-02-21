@@ -60,7 +60,8 @@ def function(event):
     def Ukey():
         return event.message.text
 
-    now = datetime.datetime.now()
+    now = datetime.datetime.now(timezone=datetime.timezone.utc)
+    now = now.astimezone(datetime.timezone(datetime.timedelta(hours=8)))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
     if Ukey() != "":
         # line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
