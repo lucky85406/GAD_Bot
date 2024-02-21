@@ -701,13 +701,13 @@ def video_test_page():
                                             "contents": [
                                                 {
                                                     "type": "icon",
-                                                    "url": "https://i.imgur.com/nHGERbB.jpg",
-                                                    "size": "4xl"
+                                                    "url": "https://i.imgur.com/7IBy7aw.png",
+                                                    "size": "5xl"
                                                 }
                                             ],
-                                            "alignItems": "center",
+                                            "alignItems": "flex-end",
                                             "justifyContent": "center",
-                                            "width": "70px"
+                                            "width": "100px"
                                         },
                                         {
                                             "type": "box",
@@ -747,13 +747,13 @@ def video_test_page():
                                             "contents": [
                                                 {
                                                     "type": "icon",
-                                                    "url": "https://i.imgur.com/7UcbDIQ.jpg",
-                                                    "size": "4xl"
+                                                    "url": "https://i.imgur.com/cYKPlO2.png",
+                                                    "size": "5xl"
                                                 }
                                             ],
                                             "justifyContent": "center",
-                                            "alignItems": "center",
-                                            "width": "70px"
+                                            "alignItems": "flex-end",
+                                            "width": "100px"
                                         },
                                         {
                                             "type": "box",
