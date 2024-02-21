@@ -1,5 +1,6 @@
 import datetime
 import time
+import pytz
 
 from flask import Flask, request, abort
 from linebot import (
@@ -60,8 +61,7 @@ def function(event):
     def Ukey():
         return event.message.text
 
-    now = datetime.datetime.now(timezone=datetime.timezone.utc)
-    now = now.astimezone(datetime.timezone(datetime.timedelta(hours=8)))
+    now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
     if Ukey() != "":
         # line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
