@@ -63,12 +63,7 @@ def function(event):
 
     now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
-    while True:
-        if nd == "2024/2/21 15:23" and Ukey() == "":
-            line_bot_api.reply_message(event.reply_token, TextSendMessage(text="TEST"))
-        elif Ukey() != "":
-            # line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
-            line_bot_api.reply_message(event.reply_token, TextSendMessage(text=nd))
+    line_bot_api.reply_message(event.reply_token, TextSendMessage(text="TEST"))
 
 
 '''
