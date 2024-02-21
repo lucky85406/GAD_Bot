@@ -1,3 +1,4 @@
+import datetime
 import time
 
 from flask import Flask, request, abort
@@ -23,7 +24,6 @@ with open("config.txt", "r") as f:
 
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
-a = 0
 
 
 @app.route("/")
@@ -59,22 +59,14 @@ def function(event):
     # 取得使用者輸入訊息
     def Ukey():
         return event.message.text
+    while True:
+        now = datetime.datetime.now()
+        nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
+        if nd == "2024/2/21 14:55":
+            line_bot_api.reply_message(event.reply_token, TextSendMessage(text="測試"))
 
-    if a == 0:
-        line_bot_api.reply_message(
-            event.reply_token,
-            TextSendMessage(
-                text='a quick reply message',
-                quick_reply=QuickReply(
-                    items=[
-                        QuickReplyButton(
-                            action=MessageAction(label="message", text="one message")
-                        )
-                    ])))
-        a += 1
-
-    if Ukey() != "":
-        line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
+        if Ukey() != "":
+            line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
 
 
 '''
