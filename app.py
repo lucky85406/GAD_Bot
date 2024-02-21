@@ -26,10 +26,14 @@ with open("config.txt", "r") as f:
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
 
+try:
+    line_bot_api.push_message("U61a0a5800e8265a3ad897623cfbc4e22", TextSendMessage(text="Hello World!!"))
+except:
+    raise e
+
 
 @app.route("/")
 def home():
-    line_bot_api.reply_message("U61a0a5800e8265a3ad897623cfbc4e22", TextSendMessage(text="TEST"))
     return 'home OK'
 
 
