@@ -1,19 +1,15 @@
 import datetime
-import time
-import pytz
+import json
 
+import pytz
 from flask import Flask, request, abort
 from linebot import (
     LineBotApi, WebhookHandler
 )
 from linebot.exceptions import (
-    InvalidSignatureError
+    InvalidSignatureError,LineBotApiError
 )
 from linebot.models import *
-from Module.messageModule import chk_mes
-import json
-import threading
-import requests
 
 app = Flask(__name__)
 
@@ -27,8 +23,8 @@ line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
 
 try:
-    line_bot_api.push_message("U61a0a5800e8265a3ad897623cfbc4e22", TextSendMessage(text="Hello World4!!"))
-except:
+    line_bot_api.push_message("U61a0a5800e8265a3ad897623cfbc4e22", TextSendMessage(text="Hello World5!!"))
+except LineBotApiError as e:
     raise e
 
 
