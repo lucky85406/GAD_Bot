@@ -23,7 +23,7 @@ line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
 uid = "U61a0a5800e8265a3ad897623cfbc4e22"
 try:
-    line_bot_api.push_message(uid, TextSendMessage(text="Hello World6!!"))
+    line_bot_api.push_message(uid, TextSendMessage(text="Hello World7!!"))
 except LineBotApiError as e:
     raise e
 
