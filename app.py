@@ -7,9 +7,7 @@ from linebot import (
 from linebot.exceptions import (
     InvalidSignatureError
 )
-from linebot.models import (
-    MessageEvent, TextMessage
-)
+from linebot.models import *
 from Module.messageModule import chk_mes
 import json
 import threading
