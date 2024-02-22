@@ -55,14 +55,16 @@ def function(event):
     def Ukey():
         return event.message.text
 
+    # 取得使用者ID
+    def Uid():
+        return event.source.user_id
+
     now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
 
     if Ukey() != "":
         # line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
-        user_id = event.source.user_id
-        profile = line_bot_api.get_profile(user_id)
-        line_bot_api.reply_message(event.reply_token, profile)
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=Uid()))
 
 '''
 def wake_up_render():
