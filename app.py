@@ -60,14 +60,27 @@ def function(event):
     # 取得使用者ID
     def Uid():
         return event.source.user_id
-
+    def select_data():
+        conn = sqlite3.connect('Data/TestDB.db')
+        res = pd.read_sql("SELECT * FROM MY_TABLE", conn)
+        conn.close()
+        return res["NAME"][0]
+    def insert_data(n):
+        conn = sqlite3.connect('Data/TestDB.db')
+        c = conn.cursor()
+        c.execute(f'INSERT INTO MY_TABLE (NAME) VALUE ("{n}")')
+        conn.commit()
+        conn.close()
+        return True
     now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
-    conn = sqlite3.connect('Data/TestDB.db')
-    res = pd.read_sql("SELECT * FROM MY_TABLE", conn)
-    conn.close()
-    if Ukey() != "":
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=res["NAME"][0]))
+
+    if "IN/" in Ukey():
+        sp_name = Ukey().split('/')[1]
+        if insert_data(sp_name):
+            line_bot_api.reply_message(event.reply_token, TextSendMessage(text="success"))
+    elif Ukey() != "":
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=select_data()))
 
 
 '''
