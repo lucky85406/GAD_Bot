@@ -737,9 +737,9 @@ def video_test_page():
                                         "label": "atob",
                                         "text": "atob"
                                     },
-                                    "backgroundColor": "#C4E1E1",
                                     "cornerRadius": "50px",
-                                    "offsetTop": "10px"
+                                    "offsetTop": "10px",
+                                    "margin": "15px"
                                 },
                                 {
                                     "type": "box",
@@ -779,20 +779,20 @@ def video_test_page():
                                                     },
                                                     "gravity": "center",
                                                     "margin": "xl",
-                                                    "offsetBottom": "md"
+                                                    "offsetBottom": "md",
+                                                    "color": "#FF5151"
                                                 }
                                             ],
                                             "maxWidth": "200px"
                                         }
                                     ],
                                     "alignItems": "center",
-                                    "margin": "25px",
+                                    "margin": "20px",
                                     "action": {
                                         "type": "message",
                                         "label": "atob",
                                         "text": "atob"
                                     },
-                                    "backgroundColor": "#FFD9EC",
                                     "cornerRadius": "50px",
                                     "offsetTop": "10px"
                                 }
