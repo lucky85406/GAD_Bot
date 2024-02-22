@@ -678,12 +678,9 @@ def video_test_page():
                                 }
                             ],
                             "maxHeight": "80px"
-                        },
-                        {
-                            "type": "separator"
                         }
                     ],
-                    "maxHeight": "115px"
+                    "maxHeight": "100px"
                 },
                 "hero": {
                     "type": "box",
@@ -704,13 +701,21 @@ def video_test_page():
                                                 {
                                                     "type": "icon",
                                                     "url": "https://i.imgur.com/7IBy7aw.png",
-                                                    "size": "60px"
-                                                },
+                                                    "size": "50px"
+                                                }
+                                            ],
+                                            "maxWidth": "80px",
+                                            "justifyContent": "center"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
                                                 {
                                                     "type": "text",
                                                     "text": "行走路線平面圖",
                                                     "weight": "bold",
-                                                    "align": "start",
+                                                    "align": "center",
                                                     "size": "xl",
                                                     "decoration": "underline",
                                                     "action": {
@@ -719,12 +724,11 @@ def video_test_page():
                                                         "text": "EGASWalk"
                                                     },
                                                     "gravity": "center",
-                                                    "margin": "xl"
+                                                    "margin": "xl",
+                                                    "offsetBottom": "md"
                                                 }
                                             ],
-                                            "alignItems": "flex-end",
-                                            "justifyContent": "center",
-                                            "margin": "xxl"
+                                            "maxWidth": "200px"
                                         }
                                     ],
                                     "alignItems": "center",
@@ -733,7 +737,9 @@ def video_test_page():
                                         "label": "atob",
                                         "text": "atob"
                                     },
-                                    "backgroundColor": "#C4E1E1"
+                                    "backgroundColor": "#C4E1E1",
+                                    "cornerRadius": "50px",
+                                    "offsetTop": "10px"
                                 },
                                 {
                                     "type": "box",
@@ -746,12 +752,20 @@ def video_test_page():
                                                 {
                                                     "type": "icon",
                                                     "url": "https://i.imgur.com/cYKPlO2.png",
-                                                    "size": "60px"
-                                                },
+                                                    "size": "50px"
+                                                }
+                                            ],
+                                            "justifyContent": "center",
+                                            "maxWidth": "80px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
                                                 {
                                                     "type": "text",
                                                     "text": "行走路線影片",
-                                                    "align": "start",
+                                                    "align": "center",
                                                     "size": "xl",
                                                     "weight": "bold",
                                                     "decoration": "underline",
@@ -764,12 +778,11 @@ def video_test_page():
                                                         }
                                                     },
                                                     "gravity": "center",
-                                                    "margin": "xl"
+                                                    "margin": "xl",
+                                                    "offsetBottom": "md"
                                                 }
                                             ],
-                                            "justifyContent": "center",
-                                            "alignItems": "flex-end",
-                                            "margin": "xxl"
+                                            "maxWidth": "200px"
                                         }
                                     ],
                                     "alignItems": "center",
@@ -779,18 +792,14 @@ def video_test_page():
                                         "label": "atob",
                                         "text": "atob"
                                     },
-                                    "backgroundColor": "#FFD9EC"
+                                    "backgroundColor": "#FFD9EC",
+                                    "cornerRadius": "50px",
+                                    "offsetTop": "10px"
                                 }
-                            ]
-                        },
-                        {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [],
-                            "margin": "30px"
+                            ],
+                            "height": "165px"
                         }
-                    ],
-                    "margin": "150px"
+                    ]
                 },
                 "styles": {
                     "hero": {
