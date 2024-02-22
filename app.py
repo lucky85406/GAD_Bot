@@ -59,8 +59,9 @@ def function(event):
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
 
     if Ukey() != "":
-        line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
-
+        # line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
+        user_id = event.source.user_id
+        line_bot_api.reply_message(event.reply_token, user_id)
 
 '''
 def wake_up_render():
