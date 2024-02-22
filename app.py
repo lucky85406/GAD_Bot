@@ -1,6 +1,7 @@
 import datetime
 import json
-
+import sqlite3
+import pandas as pd
 import pytz
 from flask import Flask, request, abort
 from linebot import (
@@ -11,6 +12,7 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 from Module.messageModule import chk_mes
+
 app = Flask(__name__)
 
 with open("config.txt", "r") as f:
@@ -21,6 +23,7 @@ with open("config.txt", "r") as f:
 
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
+
 
 @app.route("/")
 def home():
@@ -60,9 +63,12 @@ def function(event):
 
     now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
-
+    conn = sqlite3.connect('/Data/TestDB.db')
+    res = pd.read_sql("SELECT * FROM MY_TABLE", conn)
+    conn.close()
     if Ukey() != "":
-        line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(Text=res["NAME"][0]))
+
 
 '''
 def wake_up_render():
