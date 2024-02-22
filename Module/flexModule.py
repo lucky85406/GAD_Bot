@@ -786,7 +786,7 @@ def video_test_page():
                                         }
                                     ],
                                     "alignItems": "center",
-                                    "margin": "10px",
+                                    "margin": "25px",
                                     "action": {
                                         "type": "message",
                                         "label": "atob",
@@ -797,7 +797,7 @@ def video_test_page():
                                     "offsetTop": "10px"
                                 }
                             ],
-                            "height": "165px"
+                            "height": "160px"
                         }
                     ]
                 },
