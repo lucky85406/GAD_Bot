@@ -1011,30 +1011,31 @@ def transit_map():
                                         {
                                             "type": "text",
                                             "text": "07:20",
-                                            "size": "sm"
+                                            "size": "13px"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
-                                            "size": "sm"
+                                            "size": "13px",
+                                            "offsetEnd": "1px"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "5px"
+                                            "size": "13px",
+                                            "offsetStart": "7px"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "15px"
+                                            "size": "13px",
+                                            "offsetStart": "17px"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "16px"
+                                            "size": "13px",
+                                            "offsetStart": "20px"
                                         }
                                     ],
                                     "margin": "sm"
