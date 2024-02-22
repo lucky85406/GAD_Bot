@@ -61,7 +61,8 @@ def function(event):
     if Ukey() != "":
         # line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
         user_id = event.source.user_id
-        line_bot_api.reply_message(event.reply_token, user_id)
+        profile = line_bot_api.get_profile(user_id)
+        line_bot_api.reply_message(event.reply_token, profile)
 
 '''
 def wake_up_render():
