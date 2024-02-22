@@ -700,7 +700,7 @@ def video_test_page(titleimg, title, titlecolor, flat, video):
                                             "contents": [
                                                 {
                                                     "type": "icon",
-                                                    "url": "https://i.imgur.com/62IVaq3.jpg",
+                                                    "url": "https://i.imgur.com/BmOoACT.png",
                                                     "size": "50px"
                                                 }
                                             ],
