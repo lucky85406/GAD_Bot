@@ -629,7 +629,7 @@ def four_page(a, at, b, bt, c, ct, d, dt):
     return contents
 
 
-def video_test_page():
+def video_test_page(titleimg,title,flat,video):
     contents = {
         "type": "carousel",
         "contents": [
@@ -650,7 +650,7 @@ def video_test_page():
                                     "contents": [
                                         {
                                             "type": "icon",
-                                            "url": "https://i.imgur.com/0xOfojx.png",
+                                            "url": titleimg,
                                             "size": "70px"
                                         }
                                     ],
@@ -662,7 +662,7 @@ def video_test_page():
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": "EGAS to A14a",
+                                            "text": title,
                                             "weight": "bold",
                                             "align": "center",
                                             "color": "#019858",
@@ -700,7 +700,7 @@ def video_test_page():
                                             "contents": [
                                                 {
                                                     "type": "icon",
-                                                    "url": "https://i.imgur.com/7IBy7aw.png",
+                                                    "url": "https://i.imgur.com/62IVaq3.jpg",
                                                     "size": "50px"
                                                 }
                                             ],
@@ -721,7 +721,7 @@ def video_test_page():
                                                     "action": {
                                                         "type": "message",
                                                         "label": "action",
-                                                        "text": "EGASWalk"
+                                                        "text": flat
                                                     },
                                                     "gravity": "center",
                                                     "margin": "xl",
@@ -772,9 +772,9 @@ def video_test_page():
                                                     "action": {
                                                         "type": "uri",
                                                         "label": "action",
-                                                        "uri": "https://youtu.be/oRUBLSHzGtg",
+                                                        "uri": video,
                                                         "altUri": {
-                                                            "desktop": "https://youtu.be/oRUBLSHzGtg"
+                                                            "desktop": video
                                                         }
                                                     },
                                                     "gravity": "center",

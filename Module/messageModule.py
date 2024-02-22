@@ -37,7 +37,12 @@ mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去�
                                                                         "https://i.imgur.com/eWTKvs0.jpg",
                                                                         "廠辦8(新)")),
                "EGASWalk": return_img("https://i.imgur.com/zeyrBUj.jpg", "https://i.imgur.com/zeyrBUj.jpg"),
-               "影片測試": return_flex("Video TEST", video_test_page()),
+               "影片測試": return_flex("Video TEST",
+                                       video_test_page("https://i.imgur.com/0xOfojx.png", "EGAS to A14a", "EGASWalk",
+                                                       "https://youtu.be/6c6rpfV_5QM")),
+               "影片測試2": return_flex("Video TEST",
+                                        video_test_page("https://i.imgur.com/Lxu9u7L.png", "T2 to A13", "T2Walk",
+                                                        "https://youtu.be/r088JL-zitA")),
                "地點測試": return_locat("Test", "搭車點", 25.077169, 121.233441)})
 
 
