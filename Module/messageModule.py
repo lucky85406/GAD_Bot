@@ -1,5 +1,5 @@
 from linebot.models import (TextSendMessage, ImageSendMessage, FlexSendMessage, LocationMessage)
-from Module.flexModule import AtoB, three_page, four_page, video_test_page
+from Module.flexModule import AtoB, three_page, four_page, video_test_page, transit_map
 
 
 def return_flex(alt_text, contents):
@@ -46,7 +46,8 @@ mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去�
                                         video_test_page("https://i.imgur.com/Lxu9u7L.png", "T2 <-> A13", "#9f4d95",
                                                         "T2Walk",
                                                         "https://youtu.be/r088JL-zitA")),
-               "地點測試": return_locat("Test", "搭車點", 25.077169, 121.233441)})
+               "地點測試": return_locat("Test", "搭車點", 25.077169, 121.233441),
+               "時刻表測試": return_flex("Transit_Test", transit_map())})
 
 
 def chk_mes(ukey):
