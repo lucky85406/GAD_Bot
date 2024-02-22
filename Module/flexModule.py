@@ -848,7 +848,7 @@ def transit_map():
                                             "text": "長興線",
                                             "weight": "bold",
                                             "align": "center",
-                                            "color": "#FFD306",
+                                            "color": "#AE8F00",
                                             "decoration": "underline",
                                             "gravity": "center",
                                             "size": "27px"
@@ -869,17 +869,22 @@ def transit_map():
                                 {
                                     "type": "text",
                                     "text": "每日行駛",
-                                    "size": "md",
+                                    "size": "18px",
                                     "weight": "bold",
                                     "color": "#FF0000",
-                                    "align": "end"
+                                    "align": "end",
+                                    "offsetEnd": "10px",
+                                    "style": "italic",
+                                    "gravity": "center"
                                 }
                             ]
                         },
                         {
-                            "type": "separator"
+                            "type": "separator",
+                            "color": "#000000"
                         }
-                    ]
+                    ],
+                    "backgroundColor": "#B3D9D9"
                 },
                 "body": {
                     "type": "box",
@@ -1209,7 +1214,7 @@ def transit_map():
                                     "margin": "md"
                                 }
                             ],
-                            "margin": "xxl"
+                            "margin": "50px"
                         },
                         {
                             "type": "box",
@@ -1372,7 +1377,7 @@ def transit_map():
                                     "margin": "md"
                                 }
                             ],
-                            "margin": "xxl"
+                            "margin": "50px"
                         }
                     ]
                 }
