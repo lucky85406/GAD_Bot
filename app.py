@@ -87,7 +87,10 @@ def function(event):
         sp_a = Ukey().split("/")[1]
         line_bot_api.reply_message(event.reply_token, TextSendMessage(text=select_data(sp_a)))
     elif Ukey() != "":
-        line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
+        try:
+            line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
+        except LineBotApiError as e:
+            print(e)
 
 
 '''
