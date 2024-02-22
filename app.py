@@ -60,18 +60,21 @@ def function(event):
     # 取得使用者ID
     def Uid():
         return event.source.user_id
+
     def select_data():
         conn = sqlite3.connect('Data/TestDB.db')
         res = pd.read_sql("SELECT * FROM MY_TABLE", conn)
         conn.close()
-        return res["NAME"][0]
+        return res["NAME"][1]
+
     def insert_data(n):
         conn = sqlite3.connect('Data/TestDB.db')
         c = conn.cursor()
-        c.execute(f'INSERT INTO MY_TABLE (NAME) VALUE ("{n}")')
+        c.execute(f'INSERT INTO MY_TABLE (NAME) VALUES ("{n}")')
         conn.commit()
         conn.close()
         return True
+
     now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
 
