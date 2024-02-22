@@ -22,11 +22,6 @@ with open("config.txt", "r") as f:
 line_bot_api = LineBotApi(CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(CHANNEL_SECRET)
 
-try:
-    line_bot_api.push_message('Ubeadfc4bccad4259fad87aca577704fc', TextSendMessage(text="TEST"))
-except LineBotApiError as e:
-    print(e)
-
 @app.route("/")
 def home():
     return 'home OK'
@@ -67,8 +62,7 @@ def function(event):
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
 
     if Ukey() != "":
-        # line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=Uid()))
+        line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
 
 '''
 def wake_up_render():

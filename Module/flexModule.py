@@ -676,12 +676,14 @@ def video_test_page():
                                     "justifyContent": "center",
                                     "width": "220px"
                                 }
-                            ]
+                            ],
+                            "maxHeight": "80px"
                         },
                         {
                             "type": "separator"
                         }
-                    ]
+                    ],
+                    "maxHeight": "115px"
                 },
                 "hero": {
                     "type": "box",
@@ -730,7 +732,8 @@ def video_test_page():
                                         "type": "message",
                                         "label": "atob",
                                         "text": "atob"
-                                    }
+                                    },
+                                    "backgroundColor": "#C4E1E1"
                                 },
                                 {
                                     "type": "box",
@@ -775,7 +778,8 @@ def video_test_page():
                                         "type": "message",
                                         "label": "atob",
                                         "text": "atob"
-                                    }
+                                    },
+                                    "backgroundColor": "#FFD9EC"
                                 }
                             ]
                         },
@@ -787,6 +791,11 @@ def video_test_page():
                         }
                     ],
                     "margin": "150px"
+                },
+                "styles": {
+                    "hero": {
+                        "backgroundColor": "#FFF3EE"
+                    }
                 }
             }
         ]
