@@ -629,7 +629,7 @@ def four_page(a, at, b, bt, c, ct, d, dt):
     return contents
 
 
-def video_test_page(titleimg,title,flat,video):
+def video_test_page(titleimg, title, titlecolor, flat, video):
     contents = {
         "type": "carousel",
         "contents": [
@@ -665,7 +665,7 @@ def video_test_page(titleimg,title,flat,video):
                                             "text": title,
                                             "weight": "bold",
                                             "align": "center",
-                                            "color": "#019858",
+                                            "color": titlecolor,
                                             "decoration": "underline",
                                             "gravity": "center",
                                             "size": "27px"
