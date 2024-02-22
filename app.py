@@ -65,6 +65,7 @@ def function(event):
         conn = sqlite3.connect('Data/TestDB.db')
         res = pd.read_sql("SELECT * FROM MY_TABLE", conn)
         conn.close()
+        n = int(n)
         return res["NAME"][n]
 
     def insert_data(n):
