@@ -39,12 +39,12 @@ mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去�
                "EGASWalk": return_img("https://i.imgur.com/zeyrBUj.jpg", "https://i.imgur.com/zeyrBUj.jpg"),
                "T2Walk": return_img("https://i.imgur.com/Omr4t9w.jpg", "https://i.imgur.com/Omr4t9w.jpg"),
                "影片測試": return_flex("Video TEST",
-                                       video_test_page("https://i.imgur.com/0xOfojx.png", "EGAS to A14a", "#a5a552",
+                                       video_test_page("https://i.imgur.com/0xOfojx.png", "EGAS <-> A14a", "#a5a552",
                                                        "EGASWalk",
 
                                                        "https://youtu.be/6c6rpfV_5QM")),
                "影片測試2": return_flex("Video TEST",
-                                        video_test_page("https://i.imgur.com/Lxu9u7L.png", "T2 to A13", "#9f4d95",
+                                        video_test_page("https://i.imgur.com/Lxu9u7L.png", "T2 <-> A13", "#9f4d95",
                                                         "T2Walk",
 
                                                         "https://youtu.be/r088JL-zitA")),
