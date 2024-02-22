@@ -61,11 +61,11 @@ def function(event):
     def Uid():
         return event.source.user_id
 
-    def select_data():
+    def select_data(n):
         conn = sqlite3.connect('Data/TestDB.db')
         res = pd.read_sql("SELECT * FROM MY_TABLE", conn)
         conn.close()
-        return res["NAME"][1]
+        return res["NAME"][n]
 
     def insert_data(n):
         conn = sqlite3.connect('Data/TestDB.db')
@@ -82,8 +82,11 @@ def function(event):
         sp_name = Ukey().split('/')[1]
         if insert_data(sp_name):
             line_bot_api.reply_message(event.reply_token, TextSendMessage(text="success"))
+    elif "a/" in Ukey():
+        sp_a = Ukey().split("/")[1]
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=select_data(sp_a)))
     elif Ukey() != "":
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=select_data()))
+        line_bot_api.reply_message(event.reply_token, chk_mes(Ukey()))
 
 
 '''
