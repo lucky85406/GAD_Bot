@@ -63,7 +63,7 @@ def function(event):
 
     now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
-    conn = sqlite3.connect('/Data/TestDB.db')
+    conn = sqlite3.connect('TestDB.db')
     res = pd.read_sql("SELECT * FROM MY_TABLE", conn)
     conn.close()
     if Ukey() != "":
