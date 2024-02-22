@@ -63,13 +63,11 @@ def function(event):
 
     now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
-    conn = sqlite3.connect('TestDB.db')
+    conn = sqlite3.connect('Data/TestDB.db')
     res = pd.read_sql("SELECT * FROM MY_TABLE", conn)
     conn.close()
-    print(res["NAME"][0])
-    print(type(res["NAME"][0]))
     if Ukey() != "":
-        line_bot_api.reply_message(event.reply_token, TextSendMessage(Text="TEST"))
+        line_bot_api.reply_message(event.reply_token, TextSendMessage(text=res["NAME"][0]))
 
 
 '''
