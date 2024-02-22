@@ -828,18 +828,16 @@ def transit_map():
                             "contents": [
                                 {
                                     "type": "box",
-                                    "layout": "vertical",
+                                    "layout": "baseline",
                                     "contents": [
                                         {
-                                            "type": "text",
-                                            "text": "From",
-                                            "weight": "bold",
-                                            "size": "xl",
-                                            "align": "end",
-                                            "color": "#7B7B7B"
+                                            "type": "icon",
+                                            "url": "https://i.imgur.com/yDuhMfq.png",
+                                            "size": "70px"
                                         }
                                     ],
-                                    "maxWidth": "80px"
+                                    "width": "70px",
+                                    "height": "70px"
                                 },
                                 {
                                     "type": "box",
@@ -847,55 +845,41 @@ def transit_map():
                                     "contents": [
                                         {
                                             "type": "text",
-                                            "text": "長興園區",
+                                            "text": "長興線",
                                             "weight": "bold",
-                                            "size": "xxl",
-                                            "align": "center"
+                                            "align": "center",
+                                            "color": "#FFD306",
+                                            "decoration": "underline",
+                                            "gravity": "center",
+                                            "size": "27px"
                                         }
                                     ],
-                                    "maxWidth": "150px"
+                                    "offsetEnd": "xl",
+                                    "alignItems": "center",
+                                    "justifyContent": "center",
+                                    "width": "150px",
+                                    "height": "80px"
                                 }
                             ]
                         },
                         {
                             "type": "box",
-                            "layout": "horizontal",
+                            "layout": "vertical",
                             "contents": [
                                 {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "To",
-                                            "size": "xl",
-                                            "weight": "bold",
-                                            "align": "end",
-                                            "color": "#7B7B7B"
-                                        }
-                                    ],
-                                    "maxWidth": "80px"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "廠辦園區",
-                                            "align": "center",
-                                            "size": "xxl",
-                                            "weight": "bold"
-                                        }
-                                    ],
-                                    "maxWidth": "150px"
+                                    "type": "text",
+                                    "text": "每日行駛",
+                                    "size": "md",
+                                    "weight": "bold",
+                                    "color": "#FF0000",
+                                    "align": "end"
                                 }
-                            ],
-                            "margin": "lg"
+                            ]
+                        },
+                        {
+                            "type": "separator"
                         }
-                    ],
-                    "height": "120px",
-                    "backgroundColor": "#B3D9D9"
+                    ]
                 },
                 "body": {
                     "type": "box",
@@ -907,7 +891,7 @@ def transit_map():
                             "contents": [
                                 {
                                     "type": "text",
-                                    "text": "第一班",
+                                    "text": "長興01",
                                     "weight": "bold"
                                 },
                                 {
@@ -931,7 +915,7 @@ def transit_map():
                                             "borderWidth": "light",
                                             "borderColor": "#7B7B7B",
                                             "height": "1px",
-                                            "width": "50px",
+                                            "width": "30px",
                                             "offsetTop": "8px",
                                             "margin": "md"
                                         },
@@ -953,7 +937,51 @@ def transit_map():
                                             "borderWidth": "light",
                                             "borderColor": "#7B7B7B",
                                             "height": "1px",
-                                            "width": "50px",
+                                            "width": "30px",
+                                            "offsetTop": "8px",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "width": "15px",
+                                            "height": "15px",
+                                            "borderWidth": "medium",
+                                            "borderColor": "#EA0000",
+                                            "cornerRadius": "xxl",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "1px",
+                                            "width": "30px",
+                                            "offsetTop": "8px",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "width": "15px",
+                                            "height": "15px",
+                                            "borderWidth": "medium",
+                                            "borderColor": "#0000E3",
+                                            "cornerRadius": "xxl",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "1px",
+                                            "width": "30px",
                                             "offsetTop": "8px",
                                             "margin": "md"
                                         },
@@ -969,7 +997,6 @@ def transit_map():
                                             "margin": "md"
                                         }
                                     ],
-                                    "offsetStart": "30px",
                                     "margin": "md"
                                 },
                                 {
@@ -979,23 +1006,44 @@ def transit_map():
                                         {
                                             "type": "text",
                                             "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "19px"
+                                            "size": "sm"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "07:20",
+                                            "size": "sm"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
                                             "size": "sm",
-                                            "offsetStart": "13px"
+                                            "offsetStart": "5px"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
                                             "size": "sm",
-                                            "offsetStart": "8px"
+                                            "offsetStart": "15px"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "07:20",
+                                            "size": "sm",
+                                            "offsetStart": "16px"
                                         }
                                     ],
                                     "margin": "sm"
+                                },
+                                {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [],
+                                    "borderWidth": "light",
+                                    "borderColor": "#7B7B7B",
+                                    "height": "1px",
+                                    "width": "30px",
+                                    "offsetTop": "8px",
+                                    "margin": "md"
                                 }
                             ],
                             "margin": "md"
@@ -1006,7 +1054,7 @@ def transit_map():
                             "contents": [
                                 {
                                     "type": "text",
-                                    "text": "第二班",
+                                    "text": "長興02",
                                     "weight": "bold"
                                 },
                                 {
@@ -1030,7 +1078,7 @@ def transit_map():
                                             "borderWidth": "light",
                                             "borderColor": "#7B7B7B",
                                             "height": "1px",
-                                            "width": "50px",
+                                            "width": "30px",
                                             "offsetTop": "8px",
                                             "margin": "md"
                                         },
@@ -1052,7 +1100,51 @@ def transit_map():
                                             "borderWidth": "light",
                                             "borderColor": "#7B7B7B",
                                             "height": "1px",
-                                            "width": "50px",
+                                            "width": "30px",
+                                            "offsetTop": "8px",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "width": "15px",
+                                            "height": "15px",
+                                            "borderWidth": "medium",
+                                            "borderColor": "#EA0000",
+                                            "cornerRadius": "xxl",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "1px",
+                                            "width": "30px",
+                                            "offsetTop": "8px",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "width": "15px",
+                                            "height": "15px",
+                                            "borderWidth": "medium",
+                                            "borderColor": "#0000E3",
+                                            "cornerRadius": "xxl",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "1px",
+                                            "width": "30px",
                                             "offsetTop": "8px",
                                             "margin": "md"
                                         },
@@ -1068,7 +1160,6 @@ def transit_map():
                                             "margin": "md"
                                         }
                                     ],
-                                    "offsetStart": "30px",
                                     "margin": "md"
                                 },
                                 {
@@ -1078,26 +1169,47 @@ def transit_map():
                                         {
                                             "type": "text",
                                             "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "19px"
+                                            "size": "sm"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "07:20",
+                                            "size": "sm"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
                                             "size": "sm",
-                                            "offsetStart": "13px"
+                                            "offsetStart": "5px"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
                                             "size": "sm",
-                                            "offsetStart": "8px"
+                                            "offsetStart": "15px"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "07:20",
+                                            "size": "sm",
+                                            "offsetStart": "16px"
                                         }
                                     ],
                                     "margin": "sm"
+                                },
+                                {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [],
+                                    "borderWidth": "light",
+                                    "borderColor": "#7B7B7B",
+                                    "height": "1px",
+                                    "width": "30px",
+                                    "offsetTop": "8px",
+                                    "margin": "md"
                                 }
                             ],
-                            "margin": "xl"
+                            "margin": "xxl"
                         },
                         {
                             "type": "box",
@@ -1105,7 +1217,7 @@ def transit_map():
                             "contents": [
                                 {
                                     "type": "text",
-                                    "text": "第三班",
+                                    "text": "長興03",
                                     "weight": "bold"
                                 },
                                 {
@@ -1129,7 +1241,7 @@ def transit_map():
                                             "borderWidth": "light",
                                             "borderColor": "#7B7B7B",
                                             "height": "1px",
-                                            "width": "50px",
+                                            "width": "30px",
                                             "offsetTop": "8px",
                                             "margin": "md"
                                         },
@@ -1151,7 +1263,51 @@ def transit_map():
                                             "borderWidth": "light",
                                             "borderColor": "#7B7B7B",
                                             "height": "1px",
-                                            "width": "50px",
+                                            "width": "30px",
+                                            "offsetTop": "8px",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "width": "15px",
+                                            "height": "15px",
+                                            "borderWidth": "medium",
+                                            "borderColor": "#EA0000",
+                                            "cornerRadius": "xxl",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "1px",
+                                            "width": "30px",
+                                            "offsetTop": "8px",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "width": "15px",
+                                            "height": "15px",
+                                            "borderWidth": "medium",
+                                            "borderColor": "#0000E3",
+                                            "cornerRadius": "xxl",
+                                            "margin": "md"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "1px",
+                                            "width": "30px",
                                             "offsetTop": "8px",
                                             "margin": "md"
                                         },
@@ -1167,7 +1323,6 @@ def transit_map():
                                             "margin": "md"
                                         }
                                     ],
-                                    "offsetStart": "30px",
                                     "margin": "md"
                                 },
                                 {
@@ -1177,26 +1332,47 @@ def transit_map():
                                         {
                                             "type": "text",
                                             "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "19px"
+                                            "size": "sm"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "07:20",
+                                            "size": "sm"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
                                             "size": "sm",
-                                            "offsetStart": "13px"
+                                            "offsetStart": "5px"
                                         },
                                         {
                                             "type": "text",
                                             "text": "07:20",
                                             "size": "sm",
-                                            "offsetStart": "8px"
+                                            "offsetStart": "15px"
+                                        },
+                                        {
+                                            "type": "text",
+                                            "text": "07:20",
+                                            "size": "sm",
+                                            "offsetStart": "16px"
                                         }
                                     ],
                                     "margin": "sm"
+                                },
+                                {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [],
+                                    "borderWidth": "light",
+                                    "borderColor": "#7B7B7B",
+                                    "height": "1px",
+                                    "width": "30px",
+                                    "offsetTop": "8px",
+                                    "margin": "md"
                                 }
                             ],
-                            "margin": "xl"
+                            "margin": "xxl"
                         }
                     ]
                 }
