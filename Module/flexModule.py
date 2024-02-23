@@ -906,12 +906,31 @@ def transit_map():
                                         {
                                             "type": "box",
                                             "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl"
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "A10",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF8000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
@@ -919,140 +938,150 @@ def transit_map():
                                             "contents": [],
                                             "borderWidth": "light",
                                             "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
+                                            "height": "1px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#0000E3",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "長興",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#0066CC",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
                                             "contents": [],
                                             "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
+                                            "borderColor": "#7B7B7B"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#0000E3",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF0000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
                                             "contents": [],
                                             "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
+                                            "borderColor": "#7B7B7B"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "A10",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF8000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
                                             "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "長興",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#0066CC",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         }
                                     ],
-                                    "margin": "md"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "13px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "13px",
-                                            "offsetEnd": "1px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "13px",
-                                            "offsetStart": "7px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "13px",
-                                            "offsetStart": "17px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "13px",
-                                            "offsetStart": "20px"
-                                        }
-                                    ],
-                                    "margin": "sm"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [],
-                                    "borderWidth": "light",
-                                    "borderColor": "#7B7B7B",
-                                    "height": "1px",
-                                    "width": "30px",
-                                    "offsetTop": "8px",
-                                    "margin": "md"
+                                    "alignItems": "center",
+                                    "margin": "xl"
                                 }
-                            ],
-                            "margin": "md"
+                            ]
                         },
                         {
                             "type": "box",
@@ -1070,12 +1099,31 @@ def transit_map():
                                         {
                                             "type": "box",
                                             "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl"
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "A10",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF8000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
@@ -1083,136 +1131,148 @@ def transit_map():
                                             "contents": [],
                                             "borderWidth": "light",
                                             "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
+                                            "height": "1px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#0000E3",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "長興",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#0066CC",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
                                             "contents": [],
                                             "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
+                                            "borderColor": "#7B7B7B"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#0000E3",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF0000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
                                             "contents": [],
                                             "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
+                                            "borderColor": "#7B7B7B"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "A10",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF8000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
                                             "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "長興",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#0066CC",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         }
                                     ],
-                                    "margin": "md"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "5px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "15px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "16px"
-                                        }
-                                    ],
-                                    "margin": "sm"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [],
-                                    "borderWidth": "light",
-                                    "borderColor": "#7B7B7B",
-                                    "height": "1px",
-                                    "width": "30px",
-                                    "offsetTop": "8px",
-                                    "margin": "md"
+                                    "alignItems": "center",
+                                    "margin": "xl"
                                 }
                             ],
                             "margin": "50px"
@@ -1233,12 +1293,31 @@ def transit_map():
                                         {
                                             "type": "box",
                                             "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl"
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "A10",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF8000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
@@ -1246,136 +1325,148 @@ def transit_map():
                                             "contents": [],
                                             "borderWidth": "light",
                                             "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
+                                            "height": "1px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#0000E3",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "長興",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#0066CC",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
                                             "contents": [],
                                             "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
+                                            "borderColor": "#7B7B7B"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#0000E3",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF0000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
                                             "contents": [],
                                             "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "30px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
+                                            "borderColor": "#7B7B7B"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "A10",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF8000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         },
                                         {
                                             "type": "box",
                                             "layout": "vertical",
                                             "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "長興",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#0066CC",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
                                         }
                                     ],
-                                    "margin": "md"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "5px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "15px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "16px"
-                                        }
-                                    ],
-                                    "margin": "sm"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [],
-                                    "borderWidth": "light",
-                                    "borderColor": "#7B7B7B",
-                                    "height": "1px",
-                                    "width": "30px",
-                                    "offsetTop": "8px",
-                                    "margin": "md"
+                                    "alignItems": "center",
+                                    "margin": "xl"
                                 }
                             ],
                             "margin": "50px"
