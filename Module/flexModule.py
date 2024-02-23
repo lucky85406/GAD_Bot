@@ -933,7 +933,7 @@ def transit_map():
                                                 {
                                                     "type": "text",
                                                     "text": "07:20",
-                                                    "size": "13px",
+                                                    "size": "12px",
                                                     "margin": "md"
                                                 }
                                             ],
@@ -972,7 +972,7 @@ def transit_map():
                                                 {
                                                     "type": "text",
                                                     "text": "07:20",
-                                                    "size": "13px",
+                                                    "size": "12px",
                                                     "margin": "md"
                                                 }
                                             ],
@@ -1010,7 +1010,7 @@ def transit_map():
                                                 {
                                                     "type": "text",
                                                     "text": "07:20",
-                                                    "size": "13px",
+                                                    "size": "12px",
                                                     "margin": "md"
                                                 }
                                             ],
@@ -1048,7 +1048,7 @@ def transit_map():
                                                 {
                                                     "type": "text",
                                                     "text": "07:20",
-                                                    "size": "13px",
+                                                    "size": "12px",
                                                     "margin": "md"
                                                 }
                                             ],
@@ -1086,7 +1086,7 @@ def transit_map():
                                                 {
                                                     "type": "text",
                                                     "text": "07:20",
-                                                    "size": "13px",
+                                                    "size": "12px",
                                                     "margin": "md"
                                                 }
                                             ],
@@ -1124,7 +1124,7 @@ def transit_map():
                                                 {
                                                     "type": "text",
                                                     "text": "07:20",
-                                                    "size": "13px",
+                                                    "size": "12px",
                                                     "margin": "md"
                                                 }
                                             ],
@@ -1162,7 +1162,7 @@ def transit_map():
                                                 {
                                                     "type": "text",
                                                     "text": "07:20",
-                                                    "size": "13px",
+                                                    "size": "12px",
                                                     "margin": "md"
                                                 }
                                             ],
