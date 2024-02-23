@@ -915,7 +915,7 @@ def transit_map():
                                             "contents": [
                                                 {
                                                     "type": "text",
-                                                    "text": "A10",
+                                                    "text": "長興",
                                                     "size": "13px"
                                                 },
                                                 {
@@ -925,7 +925,7 @@ def transit_map():
                                                     "width": "15px",
                                                     "height": "15px",
                                                     "borderWidth": "medium",
-                                                    "borderColor": "#FF8000",
+                                                    "borderColor": "#0066CC",
                                                     "cornerRadius": "xxl",
                                                     "alignItems": "center",
                                                     "margin": "md"
@@ -954,7 +954,7 @@ def transit_map():
                                             "contents": [
                                                 {
                                                     "type": "text",
-                                                    "text": "長興",
+                                                    "text": "T2",
                                                     "size": "13px"
                                                 },
                                                 {
@@ -964,7 +964,45 @@ def transit_map():
                                                     "width": "15px",
                                                     "height": "15px",
                                                     "borderWidth": "medium",
-                                                    "borderColor": "#0066CC",
+                                                    "borderColor": "#FF0000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "廠辦",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#009100",
                                                     "cornerRadius": "xxl",
                                                     "alignItems": "center",
                                                     "margin": "md"
@@ -1030,7 +1068,7 @@ def transit_map():
                                             "contents": [
                                                 {
                                                     "type": "text",
-                                                    "text": "A10",
+                                                    "text": "廠辦",
                                                     "size": "13px"
                                                 },
                                                 {
@@ -1040,7 +1078,7 @@ def transit_map():
                                                     "width": "15px",
                                                     "height": "15px",
                                                     "borderWidth": "medium",
-                                                    "borderColor": "#FF8000",
+                                                    "borderColor": "#009100",
                                                     "cornerRadius": "xxl",
                                                     "alignItems": "center",
                                                     "margin": "md"
@@ -1068,7 +1106,7 @@ def transit_map():
                                             "contents": [
                                                 {
                                                     "type": "text",
-                                                    "text": "長興",
+                                                    "text": "T2",
                                                     "size": "13px"
                                                 },
                                                 {
@@ -1078,7 +1116,45 @@ def transit_map():
                                                     "width": "15px",
                                                     "height": "15px",
                                                     "borderWidth": "medium",
-                                                    "borderColor": "#0066CC",
+                                                    "borderColor": "#FF0000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "13px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "35px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "廠辦",
+                                                    "size": "13px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#009100",
                                                     "cornerRadius": "xxl",
                                                     "alignItems": "center",
                                                     "margin": "md"
