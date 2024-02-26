@@ -53,9 +53,9 @@ def route_control(route_start, route_end):
 
 def combin_route(route_start, route_end):
     buddle_dict = []
-    body_contents = []
     rc = route_control(route_start, route_end)
     for rci in range(len(rc)):
+        body_contents = []
         one_buddle = {
             "type": "bubble",
             "size": "giga",
