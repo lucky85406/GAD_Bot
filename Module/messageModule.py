@@ -1,5 +1,5 @@
 from linebot.models import (TextSendMessage, ImageSendMessage, FlexSendMessage, LocationMessage)
-from Module.flexModule import AtoB, three_page, four_page, video_test_page, transit_map
+from Module.flexModule import AtoB, three_page, four_page, video_test_page, transit_map, step_choice
 
 
 def return_flex(alt_text, contents):
@@ -53,5 +53,10 @@ mesDic = dict({"廠辦線": return_flex("廠辦線", AtoB("廠辦線", "【去�
 def chk_mes(ukey):
     if ukey in mesDic:
         return mesDic[ukey]
+    elif "路線選擇" == ukey:
+        return return_flex("step choice", step_choice("", "start/"))
+    elif "start" in ukey:
+        sp_s = ukey.split("/")[1]
+        return return_flex("start step", step_choice(sp_s, f"end:{sp_s}/"))
     else:
         return return_text("功能開發中!!")

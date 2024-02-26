@@ -1894,3 +1894,89 @@ def transit_map():
         ]
     }
     return contents
+
+
+def step_choice(st, se):
+    contents = {
+        "type": "bubble",
+        "size": "giga",
+        "header": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "text",
+                    "text": "路線選擇",
+                    "weight": "bold",
+                    "size": "xxl"
+                },
+                {
+                    "type": "text",
+                    "text": st,
+                    "size": "xl"
+                },
+                {
+                    "type": "separator"
+                }
+            ]
+        },
+        "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "message",
+                                "label": "長興",
+                                "text": se + "長興"
+                            }
+                        },
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "message",
+                                "label": "T2",
+                                "text": se + "T2"
+                            }
+                        },
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "message",
+                                "label": "廠辦",
+                                "text": se + "廠辦"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "message",
+                                "label": "大園",
+                                "text": se + "大園"
+                            }
+                        },
+                        {
+                            "type": "button",
+                            "action": {
+                                "type": "message",
+                                "label": "山鼻",
+                                "text": se + "山鼻"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+    return contents
