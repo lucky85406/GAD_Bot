@@ -1,6 +1,7 @@
 import sqlite3
 import pandas as pd
 import datetime
+import pytz
 
 
 def route_control(route_start, route_end):
@@ -10,7 +11,7 @@ def route_control(route_start, route_end):
     d = {}
     e = {}
     ans = {}
-    now = datetime.datetime.now()
+    now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     now_ms = (now.hour * 60) + now.minute
     print(now)
     for i in range(len(res)):
