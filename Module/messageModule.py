@@ -54,9 +54,9 @@ def chk_mes(ukey):
     if ukey in mesDic:
         return mesDic[ukey]
     elif "路線選擇" == ukey:
-        return return_flex("step choice", step_choice("-", "start/"))
+        return return_flex("step choice", step_choice("起站地點選擇", "起站：-", "start/"))
     elif "start" in ukey:
         sp_s = ukey.split("/")[1]
-        return return_flex("start step", step_choice(sp_s, f"end:{sp_s}/"))
+        return return_flex("start step", step_choice("到站地點選擇", f"起站：{sp_s}", f"end:{sp_s}/"))
     else:
         return return_text("功能開發中!!")

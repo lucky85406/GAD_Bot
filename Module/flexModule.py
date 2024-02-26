@@ -1896,7 +1896,7 @@ def transit_map():
     return contents
 
 
-def step_choice(st, se):
+def step_choice(title, st, se):
     contents = {
         "type": "bubble",
         "size": "giga",
@@ -1906,7 +1906,7 @@ def step_choice(st, se):
             "contents": [
                 {
                     "type": "text",
-                    "text": "路線選擇",
+                    "text": title,
                     "weight": "bold",
                     "size": "xxl"
                 },
