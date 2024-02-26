@@ -815,74 +815,7 @@ def video_test_page(titleimg, title, titlecolor, flat, video):
 def transit_map(body_contents):
     contents = {
         "type": "carousel",
-        "contents": [
-            {
-                "type": "bubble",
-                "size": "giga",
-                "header": {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                        {
-                            "type": "box",
-                            "layout": "horizontal",
-                            "contents": [
-                                {
-                                    "type": "text",
-                                    "text": "From",
-                                    "weight": "bold",
-                                    "size": "40px",
-                                    "color": "#6C6C6C",
-                                    "style": "italic"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "To",
-                                    "weight": "bold",
-                                    "size": "40px",
-                                    "color": "#6C6C6C",
-                                    "style": "italic"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "box",
-                            "layout": "horizontal",
-                            "contents": [
-                                {
-                                    "type": "text",
-                                    "text": "長興",
-                                    "size": "30px",
-                                    "weight": "bold"
-                                },
-                                {
-                                    "type": "text",
-                                    "text": "T2",
-                                    "size": "30px",
-                                    "weight": "bold"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "separator",
-                            "color": "#000000"
-                        }
-                    ],
-                    "backgroundColor": "#B3D9D9"
-                },
-                "body": {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                        {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": body_contents
-                        }
-                    ]
-                }
-            }
-        ]
+        "contents": body_contents
     }
     return contents
 

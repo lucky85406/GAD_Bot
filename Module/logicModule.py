@@ -52,20 +52,87 @@ def route_control(route_start, route_end):
 
 
 def combin_route(route_start, route_end):
-    res = [{
-        "type": "text",
-        "text": "長興01",
-        "weight": "bold",
-        "size": "30px"
-    }, {
-        "type": "box",
-        "layout": "vertical",
-        "contents": [],
-        "alignItems": "center",
-        "margin": "xl"}]
+    buddle_dict = []
     body_contents = []
     rc = route_control(route_start, route_end)
     for rci in range(len(rc)):
+        one_buddle = {
+            "type": "bubble",
+            "size": "giga",
+            "header": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": "From",
+                                "weight": "bold",
+                                "size": "40px",
+                                "color": "#6C6C6C",
+                                "style": "italic"
+                            },
+                            {
+                                "type": "text",
+                                "text": "To",
+                                "weight": "bold",
+                                "size": "40px",
+                                "color": "#6C6C6C",
+                                "style": "italic"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "text",
+                                "text": route_start,
+                                "size": "30px",
+                                "weight": "bold"
+                            },
+                            {
+                                "type": "text",
+                                "text": route_end,
+                                "size": "30px",
+                                "weight": "bold"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "separator",
+                        "color": "#000000"
+                    }
+                ],
+                "backgroundColor": "#B3D9D9"
+            },
+            "body": {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "vertical",
+                        "contents": []
+                    }
+                ]
+            }
+        }
+        res = [{
+            "type": "text",
+            "text": rc[rci]["ROUTEITEM"],
+            "weight": "bold",
+            "size": "30px"
+        }, {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [],
+            "alignItems": "center",
+            "margin": "xl"}]
         route = [rc[rci][i] for i in ["ROUTE1", "ROUTE2", "ROUTE3", "ROUTE4", "ROUTE5", "ROUTE6", "ROUTE7"] if
                  rc[rci][i] != "-"]
         for rti in range(len(route)):
@@ -111,7 +178,7 @@ def combin_route(route_start, route_end):
                     "borderColor": "#7B7B7B",
                     "height": "30px"
                 })
-        break
-    res[1]["contents"] = body_contents
-    return res
-
+        res[1]["contents"] = body_contents
+        one_buddle["body"]["contents"][0]["contents"] = res
+        buddle_dict.append(one_buddle)
+    return buddle_dict
