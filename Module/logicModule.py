@@ -12,6 +12,7 @@ def route_control(route_start, route_end):
     ans = {}
     now = datetime.datetime.now()
     now_ms = (now.hour * 60) + now.minute
+    print(now)
     for i in range(len(res)):
         for ri in range(1, 8):
             route_i = "ROUTE" + str(ri)
