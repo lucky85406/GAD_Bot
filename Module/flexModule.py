@@ -828,6 +828,503 @@ def transit_map():
                             "layout": "horizontal",
                             "contents": [
                                 {
+                                    "type": "text",
+                                    "text": "From",
+                                    "weight": "bold",
+                                    "size": "40px",
+                                    "color": "#6C6C6C",
+                                    "style": "italic"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "To",
+                                    "weight": "bold",
+                                    "size": "40px",
+                                    "color": "#6C6C6C",
+                                    "style": "italic"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "box",
+                            "layout": "horizontal",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "長興",
+                                    "size": "30px",
+                                    "weight": "bold"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "T2",
+                                    "size": "30px",
+                                    "weight": "bold"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "color": "#000000"
+                        }
+                    ],
+                    "backgroundColor": "#B3D9D9"
+                },
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "長興01",
+                                    "weight": "bold",
+                                    "size": "30px"
+                                },
+                                {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [
+                                        {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "長興",
+                                                    "size": "26px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#0066CC",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "22px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "150px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "350px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "廠辦",
+                                                    "size": "26px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#009100",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "22px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "150px"
+                                        }
+                                    ],
+                                    "alignItems": "center",
+                                    "margin": "xl"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "bubble",
+                "size": "giga",
+                "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "horizontal",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "From",
+                                    "weight": "bold",
+                                    "size": "40px",
+                                    "color": "#6C6C6C",
+                                    "style": "italic"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "To",
+                                    "weight": "bold",
+                                    "size": "40px",
+                                    "color": "#6C6C6C",
+                                    "style": "italic"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "box",
+                            "layout": "horizontal",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "長興",
+                                    "size": "30px",
+                                    "weight": "bold"
+                                },
+                                {
+                                    "type": "text",
+                                    "text": "T2",
+                                    "size": "30px",
+                                    "weight": "bold"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "separator",
+                            "color": "#000000"
+                        }
+                    ],
+                    "backgroundColor": "#B3D9D9"
+                },
+                "body": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "長興01",
+                                    "weight": "bold",
+                                    "size": "30px"
+                                },
+                                {
+                                    "type": "box",
+                                    "layout": "vertical",
+                                    "contents": [
+                                        {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "長興",
+                                                    "size": "26px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#0066CC",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "22px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "150px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "30px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "size": "26px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF0000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "22px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "150px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "30px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "廠辦",
+                                                    "size": "26px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#009100",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "22px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "150px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "30px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "size": "26px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF0000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "22px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "150px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "30px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "廠辦",
+                                                    "size": "26px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#009100",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "22px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "150px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "30px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "T2",
+                                                    "size": "26px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#FF0000",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "22px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "150px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "vertical",
+                                            "contents": [],
+                                            "borderWidth": "light",
+                                            "borderColor": "#7B7B7B",
+                                            "height": "30px"
+                                        },
+                                        {
+                                            "type": "box",
+                                            "layout": "horizontal",
+                                            "contents": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "廠辦",
+                                                    "size": "26px"
+                                                },
+                                                {
+                                                    "type": "box",
+                                                    "layout": "vertical",
+                                                    "contents": [],
+                                                    "width": "15px",
+                                                    "height": "15px",
+                                                    "borderWidth": "medium",
+                                                    "borderColor": "#009100",
+                                                    "cornerRadius": "xxl",
+                                                    "alignItems": "center",
+                                                    "margin": "md"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "07:20",
+                                                    "size": "22px",
+                                                    "margin": "md"
+                                                }
+                                            ],
+                                            "alignItems": "center",
+                                            "width": "150px"
+                                        }
+                                    ],
+                                    "alignItems": "center",
+                                    "margin": "xl"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "type": "bubble",
+                "size": "giga",
+                "header": {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "horizontal",
+                            "contents": [
+                                {
                                     "type": "box",
                                     "layout": "baseline",
                                     "contents": [
@@ -1390,392 +1887,6 @@ def transit_map():
                                 }
                             ],
                             "margin": "50px"
-                        }
-                    ]
-                }
-            },
-            {
-                "type": "bubble",
-                "size": "giga",
-                "header": {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                        {
-                            "type": "box",
-                            "layout": "horizontal",
-                            "contents": [
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "From",
-                                            "weight": "bold",
-                                            "size": "xl",
-                                            "align": "end",
-                                            "color": "#7B7B7B"
-                                        }
-                                    ],
-                                    "maxWidth": "80px"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "廠辦園區",
-                                            "weight": "bold",
-                                            "size": "xxl",
-                                            "align": "center"
-                                        }
-                                    ],
-                                    "maxWidth": "150px"
-                                }
-                            ]
-                        },
-                        {
-                            "type": "box",
-                            "layout": "horizontal",
-                            "contents": [
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "To",
-                                            "size": "xl",
-                                            "weight": "bold",
-                                            "align": "end",
-                                            "color": "#7B7B7B"
-                                        }
-                                    ],
-                                    "maxWidth": "80px"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "vertical",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "T2第二航廈",
-                                            "align": "center",
-                                            "size": "25px",
-                                            "weight": "bold"
-                                        }
-                                    ],
-                                    "maxWidth": "150px"
-                                }
-                            ],
-                            "margin": "lg"
-                        }
-                    ],
-                    "height": "120px",
-                    "backgroundColor": "#B3D9D9"
-                },
-                "body": {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                        {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [
-                                {
-                                    "type": "text",
-                                    "text": "第一班",
-                                    "weight": "bold"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "50px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#0000E3",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "50px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
-                                        }
-                                    ],
-                                    "offsetStart": "30px",
-                                    "margin": "md"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "19px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "13px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "8px"
-                                        }
-                                    ],
-                                    "margin": "sm"
-                                }
-                            ],
-                            "margin": "md"
-                        },
-                        {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [
-                                {
-                                    "type": "text",
-                                    "text": "第二班",
-                                    "weight": "bold"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "50px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#0000E3",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "50px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
-                                        }
-                                    ],
-                                    "offsetStart": "30px",
-                                    "margin": "md"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "19px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "13px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "8px"
-                                        }
-                                    ],
-                                    "margin": "sm"
-                                }
-                            ],
-                            "margin": "xl"
-                        },
-                        {
-                            "type": "box",
-                            "layout": "vertical",
-                            "contents": [
-                                {
-                                    "type": "text",
-                                    "text": "第三班",
-                                    "weight": "bold"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "50px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#0000E3",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "borderWidth": "light",
-                                            "borderColor": "#7B7B7B",
-                                            "height": "1px",
-                                            "width": "50px",
-                                            "offsetTop": "8px",
-                                            "margin": "md"
-                                        },
-                                        {
-                                            "type": "box",
-                                            "layout": "vertical",
-                                            "contents": [],
-                                            "width": "15px",
-                                            "height": "15px",
-                                            "borderWidth": "medium",
-                                            "borderColor": "#EA0000",
-                                            "cornerRadius": "xxl",
-                                            "margin": "md"
-                                        }
-                                    ],
-                                    "offsetStart": "30px",
-                                    "margin": "md"
-                                },
-                                {
-                                    "type": "box",
-                                    "layout": "horizontal",
-                                    "contents": [
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "19px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "13px"
-                                        },
-                                        {
-                                            "type": "text",
-                                            "text": "07:20",
-                                            "size": "sm",
-                                            "offsetStart": "8px"
-                                        }
-                                    ],
-                                    "margin": "sm"
-                                }
-                            ],
-                            "margin": "xl"
                         }
                     ]
                 }
