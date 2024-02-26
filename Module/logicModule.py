@@ -111,6 +111,7 @@ def combin_route(route_start, route_end):
                     "borderColor": "#7B7B7B",
                     "height": "30px"
                 })
+        break
     res[1]["contents"] = body_contents
     return res
 
