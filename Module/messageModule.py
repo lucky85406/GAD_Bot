@@ -1,6 +1,6 @@
 from linebot.models import (TextSendMessage, ImageSendMessage, FlexSendMessage, LocationMessage)
 from Module.flexModule import AtoB, three_page, four_page, video_test_page, transit_map, step_choice
-from logicModule import combin_route
+from Module.logicModule import combin_route
 
 
 def return_flex(alt_text, contents):
