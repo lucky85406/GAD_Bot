@@ -829,20 +829,41 @@ def step_choice(title, st, se):
             "layout": "vertical",
             "contents": [
                 {
-                    "type": "text",
-                    "text": title,
-                    "weight": "bold",
-                    "size": "xxl"
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": title,
+                            "weight": "bold",
+                            "size": "xxl"
+                        }
+                    ]
                 },
                 {
-                    "type": "text",
-                    "text": st,
-                    "size": "xl"
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": st,
+                            "size": "xl",
+                            "weight": "bold",
+                            "margin": "lg"
+                        }
+                    ]
                 },
                 {
-                    "type": "separator"
+                    "type": "separator",
+                    "margin": "sm"
                 }
-            ]
+            ],
+            "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "startColor": "#FFFFFF",
+                "endColor": "#D1E9E9"
+            }
         },
         "body": {
             "type": "box",
@@ -874,7 +895,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "大園",
-                                "text": se + "大園"
+                                "text": se+"大園"
                             }
                         },
                         {
@@ -900,7 +921,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "長興",
-                                "text": se + "長興"
+                                "text": se+"長興"
                             }
                         },
                         {
@@ -926,7 +947,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "T2",
-                                "text": se + "T2"
+                                "text": se+"T2"
                             }
                         }
                     ],
@@ -960,7 +981,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "山鼻",
-                                "text": se + "山鼻"
+                                "text": se+"山鼻"
                             }
                         },
                         {
@@ -986,7 +1007,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "廠辦",
-                                "text": se + "廠辦"
+                                "text": se+"廠辦"
                             }
                         }
                     ],
@@ -998,7 +1019,13 @@ def step_choice(title, st, se):
                     "type": "separator",
                     "margin": "xxl"
                 }
-            ]
+            ],
+            "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "startColor": "#D1E9E9",
+                "endColor": "#FFFFFF"
+            }
         },
         "footer": {
             "type": "box",
@@ -1019,10 +1046,16 @@ def step_choice(title, st, se):
                     "action": {
                         "type": "message",
                         "label": "research",
-                        "text": "重新查詢"
+                        "text": "路線選擇"
                     }
                 }
-            ]
+            ],
+            "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "startColor": "#D1E9E9",
+                "endColor": "#D1E9E9"
+            }
         }
     }
     return contents
