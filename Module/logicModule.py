@@ -89,6 +89,24 @@ def combin_route(route_start, route_end):
                         "layout": "horizontal",
                         "contents": [
                             {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": []
+                            },
+                            {
+                                "type": "text",
+                                "text": "↓",
+                                "size": "35px",
+                                "align": "center",
+                                "color": "#FF0000"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
                                 "type": "text",
                                 "text": "To",
                                 "weight": "bold",
@@ -102,7 +120,8 @@ def combin_route(route_start, route_end):
                                 "size": "30px",
                                 "weight": "bold"
                             }
-                        ]
+                        ],
+                        "margin": "xxl"
                     },
                     {
                         "type": "separator",
@@ -123,17 +142,92 @@ def combin_route(route_start, route_end):
                 ]
             }
         }
-        res = [{
-            "type": "text",
-            "text": rc[rci]["ROUTEITEM"],
-            "weight": "bold",
-            "size": "30px"
-        }, {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [],
-            "alignItems": "center",
-            "margin": "xl"}]
+        res = [
+            {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "路線：",
+                                        "size": "25px",
+                                        "weight": "bold"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": rc[rci]["ROUTEGROUP"],
+                                        "size": "20px",
+                                        "weight": "bold"
+                                    }
+                                ],
+                                "offsetEnd": "10px",
+                                "offsetTop": "3px"
+                            }
+                        ],
+                        "width": "170px"
+                    },
+                    {
+                        "type": "box",
+                        "layout": "horizontal",
+                        "contents": [
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": "備註：",
+                                        "size": "25px",
+                                        "weight": "bold"
+                                    }
+                                ]
+                            },
+                            {
+                                "type": "box",
+                                "layout": "vertical",
+                                "contents": [
+                                    {
+                                        "type": "text",
+                                        "text": rc[rci]["ROUTENOTE"],
+                                        "size": "20px",
+                                        "weight": "bold"
+                                    }
+                                ],
+                                "offsetTop": "3px",
+                                "offsetEnd": "10px"
+                            }
+                        ],
+                        "justifyContent": "flex-end",
+                        "width": "160px",
+                        "margin": "10px"
+                    }
+                ]
+            },
+            {
+                "type": "text",
+                "text": rc[rci]["ROUTEITEM"],
+                "weight": "bold",
+                "size": "30px"
+            }, {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [],
+                "alignItems": "center",
+                "margin": "xl"}]
         route = [rc[rci][i] for i in ["ROUTE1", "ROUTE2", "ROUTE3", "ROUTE4", "ROUTE5", "ROUTE6", "ROUTE7"] if
                  rc[rci][i] != "-"]
         for rti in range(len(route)):
