@@ -5,7 +5,7 @@ import pytz
 
 
 def route_control(route_start, route_end):
-    conn = sqlite3.connect('Data/TestDB.db')
+    conn = sqlite3.connect('../Data/TestDB.db')
     res = pd.read_sql(f"SELECT * FROM ROUTEINFO", conn)
     conn.close()
     d = {}
@@ -274,7 +274,7 @@ def combin_route(route_start, route_end):
                     "borderColor": "#7B7B7B",
                     "height": "30px"
                 })
-        res[1]["contents"] = body_contents
+        res[2]["contents"] = body_contents
         one_buddle["body"]["contents"][0]["contents"] = res
         buddle_dict.append(one_buddle)
     return buddle_dict
