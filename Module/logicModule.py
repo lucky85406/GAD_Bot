@@ -63,11 +63,11 @@ def combin_route(route_start, route_end):
             "size": "giga",
             "header": {
                 "type": "box",
-                "layout": "vertical",
+                "layout": "horizontal",
                 "contents": [
                     {
                         "type": "box",
-                        "layout": "horizontal",
+                        "layout": "Vertical",
                         "contents": [
                             {
                                 "type": "text",
@@ -76,7 +76,18 @@ def combin_route(route_start, route_end):
                                 "size": "40px",
                                 "color": "#6C6C6C",
                                 "style": "italic"
-                            },
+                            }, {
+                                "type": "text",
+                                "text": route_start,
+                                "size": "30px",
+                                "weight": "bold"
+                            }
+                        ]
+                    },
+                    {
+                        "type": "box",
+                        "layout": "Vertical",
+                        "contents": [
                             {
                                 "type": "text",
                                 "text": "To",
@@ -84,18 +95,6 @@ def combin_route(route_start, route_end):
                                 "size": "40px",
                                 "color": "#6C6C6C",
                                 "style": "italic"
-                            }
-                        ]
-                    },
-                    {
-                        "type": "box",
-                        "layout": "horizontal",
-                        "contents": [
-                            {
-                                "type": "text",
-                                "text": route_start,
-                                "size": "30px",
-                                "weight": "bold"
                             },
                             {
                                 "type": "text",
