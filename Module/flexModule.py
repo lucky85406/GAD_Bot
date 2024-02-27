@@ -853,37 +853,24 @@ def step_choice(title, st, se):
                     "layout": "horizontal",
                     "contents": [
                         {
-                            "type": "button",
-                            "action": {
-                                "type": "message",
-                                "label": "長興",
-                                "text": se + "長興"
-                            }
-                        },
-                        {
-                            "type": "button",
-                            "action": {
-                                "type": "message",
-                                "label": "T2",
-                                "text": se + "T2"
-                            }
-                        },
-                        {
-                            "type": "button",
-                            "action": {
-                                "type": "message",
-                                "label": "廠辦",
-                                "text": se + "廠辦"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "type": "box",
-                    "layout": "horizontal",
-                    "contents": [
-                        {
-                            "type": "button",
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "大園",
+                                    "size": "30px",
+                                    "weight": "bold"
+                                }
+                            ],
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "borderWidth": "normal",
+                            "borderColor": "#000000",
+                            "height": "80px",
+                            "cornerRadius": "xxl",
+                            "width": "110px",
+                            "backgroundColor": "#FFEEDD",
                             "action": {
                                 "type": "message",
                                 "label": "大園",
@@ -891,14 +878,149 @@ def step_choice(title, st, se):
                             }
                         },
                         {
-                            "type": "button",
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "長興",
+                                    "size": "30px",
+                                    "weight": "bold"
+                                }
+                            ],
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "height": "80px",
+                            "borderWidth": "normal",
+                            "borderColor": "#000000",
+                            "cornerRadius": "xxl",
+                            "width": "110px",
+                            "margin": "md",
+                            "backgroundColor": "#DFFFDF",
+                            "action": {
+                                "type": "message",
+                                "label": "長興",
+                                "text": se + "長興"
+                            }
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "T2",
+                                    "size": "30px",
+                                    "weight": "bold"
+                                }
+                            ],
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "height": "80px",
+                            "borderWidth": "normal",
+                            "borderColor": "#000000",
+                            "cornerRadius": "xxl",
+                            "width": "110px",
+                            "margin": "md",
+                            "backgroundColor": "#D2E9FF",
+                            "action": {
+                                "type": "message",
+                                "label": "T2",
+                                "text": se + "T2"
+                            }
+                        }
+                    ],
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "height": "100px"
+                },
+                {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "山鼻",
+                                    "size": "30px",
+                                    "weight": "bold"
+                                }
+                            ],
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "height": "80px",
+                            "borderWidth": "normal",
+                            "borderColor": "#000000",
+                            "width": "110px",
+                            "cornerRadius": "xxl",
+                            "backgroundColor": "#FFD2D2",
                             "action": {
                                 "type": "message",
                                 "label": "山鼻",
                                 "text": se + "山鼻"
                             }
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "廠辦",
+                                    "size": "30px",
+                                    "weight": "bold"
+                                }
+                            ],
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "height": "80px",
+                            "borderWidth": "normal",
+                            "borderColor": "#000000",
+                            "width": "110px",
+                            "cornerRadius": "xxl",
+                            "margin": "md",
+                            "backgroundColor": "#E2C2DE",
+                            "action": {
+                                "type": "message",
+                                "label": "廠辦",
+                                "text": se + "廠辦"
+                            }
                         }
-                    ]
+                    ],
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "height": "100px"
+                },
+                {
+                    "type": "separator",
+                    "margin": "xxl"
+                }
+            ]
+        },
+        "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": "重新查詢",
+                            "weight": "bold",
+                            "size": "xl",
+                            "align": "center"
+                        }
+                    ],
+                    "action": {
+                        "type": "message",
+                        "label": "research",
+                        "text": "重新查詢"
+                    }
                 }
             ]
         }
