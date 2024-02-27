@@ -175,12 +175,10 @@ def combin_route(route_start, route_end):
                                         "size": "20px",
                                         "weight": "bold"
                                     }
-                                ],
-                                "offsetEnd": "10px",
-                                "offsetTop": "3px"
+                                ]
                             }
                         ],
-                        "width": "170px"
+                        "width": "150px"
                     },
                     {
                         "type": "box",
@@ -193,7 +191,7 @@ def combin_route(route_start, route_end):
                                     {
                                         "type": "text",
                                         "text": "備註：",
-                                        "size": "20px",
+                                        "size": "25px",
                                         "weight": "bold"
                                     }
                                 ]
@@ -208,14 +206,11 @@ def combin_route(route_start, route_end):
                                         "size": "20px",
                                         "weight": "bold"
                                     }
-                                ],
-                                "offsetTop": "3px",
-                                "offsetEnd": "10px"
+                                ]
                             }
                         ],
                         "justifyContent": "flex-end",
-                        "width": "160px",
-                        "margin": "10px"
+                        "width": "160px"
                     }
                 ]
             },
@@ -223,7 +218,7 @@ def combin_route(route_start, route_end):
                 "type": "text",
                 "text": rc[rci]["ROUTEITEM"],
                 "weight": "bold",
-                "size": "30px",
+                "size": "25px",
                 "margin": "30px"
             },
             {
@@ -243,7 +238,7 @@ def combin_route(route_start, route_end):
                     {
                         "type": "text",
                         "text": sp_route[0],
-                        "size": "26px"
+                        "size": "23px"
                     },
                     {
                         "type": "box",
@@ -260,7 +255,7 @@ def combin_route(route_start, route_end):
                     {
                         "type": "text",
                         "text": f"{sp_route[1][0:2]}:{sp_route[1][2:4]}",
-                        "size": "22px",
+                        "size": "20px",
                         "margin": "md"
                     }
                 ],
