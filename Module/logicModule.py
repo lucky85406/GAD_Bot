@@ -80,7 +80,8 @@ def combin_route(route_start, route_end):
                                 "type": "text",
                                 "text": route_start,
                                 "size": "30px",
-                                "weight": "bold"
+                                "weight": "bold",
+                                "align": "center"
                             }
                         ]
                     },
@@ -118,7 +119,8 @@ def combin_route(route_start, route_end):
                                 "type": "text",
                                 "text": route_end,
                                 "size": "30px",
-                                "weight": "bold"
+                                "weight": "bold",
+                                "align": "center"
                             }
                         ],
                         "margin": "xxl"
@@ -191,7 +193,7 @@ def combin_route(route_start, route_end):
                                     {
                                         "type": "text",
                                         "text": "備註：",
-                                        "size": "25px",
+                                        "size": "20px",
                                         "weight": "bold"
                                     }
                                 ]
@@ -221,7 +223,8 @@ def combin_route(route_start, route_end):
                 "type": "text",
                 "text": rc[rci]["ROUTEITEM"],
                 "weight": "bold",
-                "size": "30px"
+                "size": "30px",
+                "margin": "30px"
             },
             {
                 "type": "box",
