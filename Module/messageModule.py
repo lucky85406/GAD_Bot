@@ -60,6 +60,10 @@ def chk_mes(ukey):
         return return_flex("start step", step_choice("到站地點選擇", f"起站：{sp_s}", f"end:{sp_s}/"))
     elif "end" in ukey:
         sp_end = ukey.split(":")[1].split("/")
-        return return_flex("end step", transit_map(combin_route(sp_end[0], sp_end[1])))
+        body_contents = combin_route(sp_end[0], sp_end[1])
+        if len(body_contents):
+            return return_text("查無此地點相關路線，請重新開啟查詢!!")
+        else:
+            return return_flex("end step", transit_map(body_contents))
     else:
         return return_text("功能開發中!!")

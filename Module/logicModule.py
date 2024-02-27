@@ -5,7 +5,7 @@ import pytz
 
 
 def route_control(route_start, route_end):
-    conn = sqlite3.connect('Data/TestDB.db')
+    conn = sqlite3.connect('../Data/TestDB.db')
     res = pd.read_sql(f"SELECT * FROM ROUTEINFO", conn)
     conn.close()
     d = {}
@@ -20,8 +20,8 @@ def route_control(route_start, route_end):
             if res.iloc[i][route_i] != "-":
                 sp_st = res.iloc[i][route_i].split("/")[1]
                 st_ms = int(sp_st[0:2]) * 60 + int(sp_st[2:4])
-                if route_start in res.iloc[i][route_i]:
-                    for li in range(ri, 8):
+                if route_start in res.iloc[i][route_i] and ri != 7:
+                    for li in range(ri + 1, 8):
                         route_li = "ROUTE" + str(li)
                         if route_end in res.iloc[i][route_li]:
                             sp_r1 = res.iloc[i]["ROUTE1"].split("/")[1]
