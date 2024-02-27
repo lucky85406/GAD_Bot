@@ -63,11 +63,11 @@ def combin_route(route_start, route_end):
             "size": "giga",
             "header": {
                 "type": "box",
-                "layout": "horizontal",
+                "layout": "vertical",
                 "contents": [
                     {
                         "type": "box",
-                        "layout": "Vertical",
+                        "layout": "horizontal",
                         "contents": [
                             {
                                 "type": "text",
@@ -86,7 +86,7 @@ def combin_route(route_start, route_end):
                     },
                     {
                         "type": "box",
-                        "layout": "Vertical",
+                        "layout": "horizontal",
                         "contents": [
                             {
                                 "type": "text",
