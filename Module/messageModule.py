@@ -61,10 +61,9 @@ def chk_mes(ukey):
     elif "end" in ukey:
         sp_end = ukey.split(":")[1].split("/")
         body_contents = combin_route(sp_end[0], sp_end[1])
-        print(len(body_contents))
         if len(body_contents):
-            return return_text("查無此地點相關路線，請重新開啟查詢!!")
-        else:
             return return_flex("end step", transit_map(body_contents))
+        else:
+            return return_text("查無此地點相關路線，請重新開啟查詢!!")
     else:
         return return_text("功能開發中!!")
