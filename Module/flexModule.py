@@ -820,7 +820,7 @@ def transit_map(body_contents):
     return contents
 
 
-def step_choice(title, st, se):
+def step_choice(title, titlecolor, st, se):
     contents = {
         "type": "bubble",
         "size": "giga",
@@ -830,13 +830,42 @@ def step_choice(title, st, se):
             "contents": [
                 {
                     "type": "box",
-                    "layout": "vertical",
+                    "layout": "horizontal",
                     "contents": [
                         {
-                            "type": "text",
-                            "text": title,
-                            "weight": "bold",
-                            "size": "xxl"
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": title,
+                                    "size": "xxl",
+                                    "weight": "bold",
+                                    "align": "center",
+                                    "gravity": "center",
+                                    "offsetTop": "10px"
+                                }
+                            ],
+                            "width": "100px",
+                            "borderWidth": "medium",
+                            "borderColor": titlecolor,
+                            "cornerRadius": "lg",
+                            "height": "65px",
+                            "backgroundColor": "#D2E9FF"
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "地點選擇",
+                                    "size": "xxl",
+                                    "weight": "bold",
+                                    "offsetTop": "13px",
+                                    "offsetStart": "5px"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -895,7 +924,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "大園",
-                                "text": se+"大園"
+                                "text": se + "大園"
                             }
                         },
                         {
@@ -921,7 +950,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "長興",
-                                "text": se+"長興"
+                                "text": se + "長興"
                             }
                         },
                         {
@@ -947,7 +976,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "T2",
-                                "text": se+"T2"
+                                "text": se + "T2"
                             }
                         }
                     ],
@@ -981,7 +1010,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "山鼻",
-                                "text": se+"山鼻"
+                                "text": se + "山鼻"
                             }
                         },
                         {
@@ -1007,7 +1036,7 @@ def step_choice(title, st, se):
                             "action": {
                                 "type": "message",
                                 "label": "廠辦",
-                                "text": se+"廠辦"
+                                "text": se + "廠辦"
                             }
                         }
                     ],
