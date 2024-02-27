@@ -848,10 +848,10 @@ def step_choice(title, titlecolor, st, se):
                             ],
                             "width": "100px",
                             "borderWidth": "medium",
-                            "borderColor": titlecolor,
+                            "borderColor": "#000000",
                             "cornerRadius": "lg",
                             "height": "65px",
-                            "backgroundColor": "#D2E9FF"
+                            "backgroundColor": titlecolor
                         },
                         {
                             "type": "box",
