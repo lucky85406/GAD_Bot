@@ -5,7 +5,7 @@ import pytz
 
 
 def route_control(route_start, route_end):
-    conn = sqlite3.connect('../Data/TestDB.db')
+    conn = sqlite3.connect('Data/TestDB.db')
     res = pd.read_sql(f"SELECT * FROM ROUTEINFO", conn)
     conn.close()
     d = {}
