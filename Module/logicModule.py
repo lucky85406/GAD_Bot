@@ -83,7 +83,8 @@ def combin_route(route_start, route_end):
                                 "weight": "bold",
                                 "align": "center"
                             }
-                        ]
+                        ],
+                        "width": "250px"
                     },
                     {
                         "type": "box",
@@ -101,7 +102,8 @@ def combin_route(route_start, route_end):
                                 "align": "center",
                                 "color": "#FF0000"
                             }
-                        ]
+                        ],
+                        "width": "250px"
                     },
                     {
                         "type": "box",
@@ -123,7 +125,8 @@ def combin_route(route_start, route_end):
                                 "align": "center"
                             }
                         ],
-                        "margin": "xxl"
+                        "margin": "xxl",
+                        "width": "250px"
                     },
                     {
                         "type": "separator",
@@ -160,7 +163,7 @@ def combin_route(route_start, route_end):
                                     {
                                         "type": "text",
                                         "text": "路線：",
-                                        "size": "25px",
+                                        "size": "23px",
                                         "weight": "bold"
                                     }
                                 ]
@@ -178,7 +181,7 @@ def combin_route(route_start, route_end):
                                 ]
                             }
                         ],
-                        "width": "150px"
+                        "width": "140px"
                     },
                     {
                         "type": "box",
@@ -191,7 +194,7 @@ def combin_route(route_start, route_end):
                                     {
                                         "type": "text",
                                         "text": "備註：",
-                                        "size": "25px",
+                                        "size": "23px",
                                         "weight": "bold"
                                     }
                                 ]
@@ -210,7 +213,8 @@ def combin_route(route_start, route_end):
                             }
                         ],
                         "justifyContent": "flex-end",
-                        "width": "160px"
+                        "width": "140px",
+                        "margin": "xxl"
                     }
                 ]
             },
@@ -219,7 +223,7 @@ def combin_route(route_start, route_end):
                 "text": rc[rci]["ROUTEITEM"],
                 "weight": "bold",
                 "size": "25px",
-                "margin": "30px"
+                "margin": "15px"
             },
             {
                 "type": "box",
