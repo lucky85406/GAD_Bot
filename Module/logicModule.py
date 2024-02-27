@@ -222,7 +222,8 @@ def combin_route(route_start, route_end):
                 "text": rc[rci]["ROUTEITEM"],
                 "weight": "bold",
                 "size": "30px"
-            }, {
+            },
+            {
                 "type": "box",
                 "layout": "vertical",
                 "contents": [],
