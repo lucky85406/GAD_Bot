@@ -237,8 +237,8 @@ def combin_route(route_start, route_end):
             scolor = "#0066CC"
             tcolor = "#000000"
             if sp_route[0] in [route_start,route_end]:
-                scolor = "#FF0000"
-                tcolor = "#FF7575"
+                scolor = "#FF2D2D"
+                tcolor = "#FF2D2D"
 
             body_dict = {
                 "type": "box",
