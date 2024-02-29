@@ -232,19 +232,19 @@ def combin_route(route_start, route_end):
                 "margin": "xl"}]
         route = [rc[rci][i] for i in ["ROUTE1", "ROUTE2", "ROUTE3", "ROUTE4", "ROUTE5", "ROUTE6", "ROUTE7"] if
                  rc[rci][i] != "-"]
-        chk = False
+        chk = 0
         for rti in range(len(route)):
             sp_route = route[rti].split("/")
             scolor = "#0066CC"
             tcolor = "#000000"
-            if sp_route[0] == route_start:
+            if chk == 0 and sp_route[0] == route_start:
                 scolor = "#FF2D2D"
                 tcolor = "#FF2D2D"
-                chk = True
-            elif chk and sp_route[0] == route_end:
+                chk = 1
+            elif chk == 1 and sp_route[0] == route_end:
                 scolor = "#01B468"
                 tcolor = "#01B468"
-                chk = False
+                chk = 2
 
             body_dict = {
                 "type": "box",
