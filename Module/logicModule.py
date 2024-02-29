@@ -238,7 +238,7 @@ def combin_route(route_start, route_end):
             tcolor = "#000000"
             if sp_route[0] in [route_start,route_end]:
                 scolor = "#FF0000"
-                tcolor = "#FF0000"
+                tcolor = "#FF7575"
 
             body_dict = {
                 "type": "box",
@@ -266,7 +266,8 @@ def combin_route(route_start, route_end):
                         "type": "text",
                         "text": f"{sp_route[1][0:2]}:{sp_route[1][2:4]}",
                         "size": "20px",
-                        "margin": "md"
+                        "margin": "md",
+                        "color": tcolor
                     }
                 ],
                 "alignItems": "center",
