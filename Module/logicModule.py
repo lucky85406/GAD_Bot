@@ -293,6 +293,3 @@ def combin_route(route_start, route_end):
         one_buddle["body"]["contents"][0]["contents"] = res
         buddle_dict.append(one_buddle)
     return buddle_dict
-
-
-print(combin_route("T2", "廠辦"))
