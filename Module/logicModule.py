@@ -234,6 +234,13 @@ def combin_route(route_start, route_end):
                  rc[rci][i] != "-"]
         for rti in range(len(route)):
             sp_route = route[rti].split("/")
+            scolor = "#0066CC"
+
+            if sp_route[0] == route_start:
+                scolor = "FF0000"
+            elif sp_route[0] == route_end:
+                scolor = "00BB00"
+
             body_dict = {
                 "type": "box",
                 "layout": "horizontal",
@@ -250,7 +257,7 @@ def combin_route(route_start, route_end):
                         "width": "15px",
                         "height": "15px",
                         "borderWidth": "medium",
-                        "borderColor": "#0066CC",
+                        "borderColor": scolor,
                         "cornerRadius": "xxl",
                         "alignItems": "center",
                         "margin": "md"
