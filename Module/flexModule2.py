@@ -951,6 +951,45 @@ def boss_item():
                         }
                     ],
                     "margin": "lg"
+                },
+                {
+                    "type": "separator",
+                    "color": "#a9a9a9",
+                    "margin": "md"
+                },
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "結算",
+                                    "size": "25px",
+                                    "weight": "bold"
+                                }
+                            ],
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "height": "50px",
+                            "width": "100px",
+                            "borderWidth": "medium",
+                            "borderColor": "#000000",
+                            "cornerRadius": "xl",
+                            "background": {
+                                "type": "linearGradient",
+                                "angle": "0deg",
+                                "startColor": "#AFCFAF",
+                                "endColor": "#BFD9BF"
+                            }
+                        }
+                    ],
+                    "alignItems": "center",
+                    "justifyContent": "center",
+                    "margin": "lg"
                 }
             ],
             "background": {
@@ -1118,44 +1157,6 @@ def choose_form():
                 "type": "linearGradient",
                 "angle": "0deg",
                 "startColor": "#EAF7F8",
-                "endColor": "#EAF7F8"
-            }
-        },
-        "footer": {
-            "type": "box",
-            "layout": "vertical",
-            "contents": [
-                {
-                    "type": "separator",
-                    "color": "#c0c0c0"
-                },
-                {
-                    "type": "box",
-                    "layout": "vertical",
-                    "contents": [
-                        {
-                            "type": "text",
-                            "text": "結算",
-                            "weight": "bold",
-                            "size": "30px"
-                        }
-                    ],
-                    "justifyContent": "center",
-                    "alignItems": "center",
-                    "width": "100px",
-                    "height": "45px",
-                    "borderWidth": "medium",
-                    "borderColor": "#000000",
-                    "cornerRadius": "md",
-                    "margin": "lg"
-                }
-            ],
-            "justifyContent": "center",
-            "alignItems": "center",
-            "background": {
-                "type": "linearGradient",
-                "angle": "0deg",
-                "startColor": "#C3E8EC",
                 "endColor": "#EAF7F8"
             }
         }
