@@ -1,5 +1,5 @@
 from linebot.models import (TextSendMessage, ImageSendMessage, FlexSendMessage, LocationMessage)
-from Module.flexModule2 import profit_calculation, boss_item
+from Module.flexModule2 import profit_calculation, boss_item, choose_form
 
 
 def return_flex(alt_text, contents):
@@ -23,5 +23,7 @@ def chk_mes(uid, mes):
         return [True, return_flex("計算收益", profit_calculation())]
     elif uid == "U61a0a5800e8265a3ad897623cfbc4e22" and mes == "BOSS":
         return [True, return_flex("項目表", boss_item())]
+    elif uid == "U61a0a5800e8265a3ad897623cfbc4e22" and mes == "選擇":
+        return [True, return_flex("選擇表", choose_form())]
     else:
         return [False, ""]

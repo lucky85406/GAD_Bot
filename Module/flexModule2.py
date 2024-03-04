@@ -971,3 +971,157 @@ def boss_item():
         }
     }
     return contents
+
+
+def choose_form():
+    contents = {
+        "type": "bubble",
+        "size": "giga",
+        "header": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": "中文字全名",
+                            "weight": "bold",
+                            "size": "40px",
+                            "align": "center"
+                        }
+                    ],
+                    "width": "320px",
+                    "borderWidth": "medium",
+                    "borderColor": "#000000",
+                    "cornerRadius": "xxl",
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "height": "100px",
+                    "background": {
+                        "type": "linearGradient",
+                        "angle": "0deg",
+                        "startColor": "#B7B7FF",
+                        "endColor": "#EAEAFF",
+                        "centerColor": "#D0D0FF"
+                    }
+                },
+                {
+                    "type": "separator",
+                    "color": "#000000",
+                    "margin": "xl"
+                }
+            ],
+            "justifyContent": "center",
+            "alignItems": "center",
+            "height": "140px",
+            "background": {
+                "type": "linearGradient",
+                "angle": "180deg",
+                "startColor": "#FAFAD2",
+                "endColor": "#FDFDE9",
+                "centerColor": "#FDFDE9"
+            }
+        },
+        "body": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "box",
+                    "layout": "horizontal",
+                    "contents": [
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "中文字",
+                                    "weight": "bold",
+                                    "size": "25px"
+                                }
+                            ],
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "width": "100px",
+                            "height": "70px",
+                            "borderWidth": "medium",
+                            "borderColor": "#000000",
+                            "cornerRadius": "xxl",
+                            "background": {
+                                "type": "linearGradient",
+                                "angle": "0deg",
+                                "startColor": "#E0E0E0",
+                                "endColor": "#ffffff"
+                            }
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "中文字",
+                                    "weight": "bold",
+                                    "size": "25px"
+                                }
+                            ],
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "width": "100px",
+                            "height": "70px",
+                            "borderWidth": "medium",
+                            "borderColor": "#000000",
+                            "cornerRadius": "xxl",
+                            "margin": "xxl",
+                            "background": {
+                                "type": "linearGradient",
+                                "angle": "0deg",
+                                "startColor": "#C1FFE4",
+                                "endColor": "#ffffff"
+                            }
+                        },
+                        {
+                            "type": "box",
+                            "layout": "vertical",
+                            "contents": [
+                                {
+                                    "type": "text",
+                                    "text": "中文字",
+                                    "weight": "bold",
+                                    "size": "25px"
+                                }
+                            ],
+                            "justifyContent": "center",
+                            "alignItems": "center",
+                            "width": "100px",
+                            "height": "70px",
+                            "borderWidth": "medium",
+                            "borderColor": "#000000",
+                            "cornerRadius": "xxl",
+                            "margin": "xxl",
+                            "background": {
+                                "type": "linearGradient",
+                                "angle": "0deg",
+                                "startColor": "#FF5151",
+                                "endColor": "#ffffff"
+                            }
+                        }
+                    ],
+                    "justifyContent": "center",
+                    "alignItems": "center"
+                }
+            ],
+            "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
+                "startColor": "#FAFAD2",
+                "endColor": "#FDFDE9",
+                "centerColor": "#FAFAD2"
+            }
+        }
+    }
+    return contents
