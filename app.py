@@ -11,7 +11,8 @@ from linebot.exceptions import (
     InvalidSignatureError, LineBotApiError
 )
 from linebot.models import *
-from Module.messageModule import chk_mes
+from Module.messageModule import chk_mes as chk_mes
+from Module.mesModule2 import chk_mes as chk_mes2
 
 app = Flask(__name__)
 
@@ -78,8 +79,9 @@ def function(event):
 
     now = datetime.datetime.now(pytz.timezone("Asia/Taipei"))
     nd = f"{now.year}/{now.month}/{now.day} {now.hour}:{now.minute}"
-
-    if "IN/" in Ukey():
+    if chk_mes2(Uid(), Ukey())[0]:
+        line_bot_api.reply_message(event.reply_token, chk_mes2(Uid(), Ukey())[1])
+    elif "IN/" in Ukey():
         sp_name = Ukey().split('/')[1]
         if insert_data(sp_name):
             line_bot_api.reply_message(event.reply_token, TextSendMessage(text="success"))
