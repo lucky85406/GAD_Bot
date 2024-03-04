@@ -1117,6 +1117,44 @@ def choose_form():
             "background": {
                 "type": "linearGradient",
                 "angle": "0deg",
+                "startColor": "#EAF7F8",
+                "endColor": "#EAF7F8"
+            }
+        },
+        "footer": {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+                {
+                    "type": "separator",
+                    "color": "#000000"
+                },
+                {
+                    "type": "box",
+                    "layout": "vertical",
+                    "contents": [
+                        {
+                            "type": "text",
+                            "text": "結算",
+                            "weight": "bold",
+                            "size": "35px"
+                        }
+                    ],
+                    "justifyContent": "center",
+                    "alignItems": "center",
+                    "width": "100px",
+                    "height": "70px",
+                    "borderWidth": "medium",
+                    "borderColor": "#000000",
+                    "cornerRadius": "xxl",
+                    "margin": "lg"
+                }
+            ],
+            "justifyContent": "center",
+            "alignItems": "center",
+            "background": {
+                "type": "linearGradient",
+                "angle": "0deg",
                 "startColor": "#C3E8EC",
                 "endColor": "#EAF7F8"
             }
