@@ -1127,7 +1127,7 @@ def choose_form():
             "contents": [
                 {
                     "type": "separator",
-                    "color": "#000000"
+                    "color": "#c0c0c0"
                 },
                 {
                     "type": "box",
@@ -1137,16 +1137,16 @@ def choose_form():
                             "type": "text",
                             "text": "結算",
                             "weight": "bold",
-                            "size": "35px"
+                            "size": "30px"
                         }
                     ],
                     "justifyContent": "center",
                     "alignItems": "center",
                     "width": "100px",
-                    "height": "70px",
+                    "height": "45px",
                     "borderWidth": "medium",
                     "borderColor": "#000000",
-                    "cornerRadius": "xxl",
+                    "cornerRadius": "md",
                     "margin": "lg"
                 }
             ],
