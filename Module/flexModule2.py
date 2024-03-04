@@ -1020,9 +1020,8 @@ def choose_form():
             "background": {
                 "type": "linearGradient",
                 "angle": "180deg",
-                "startColor": "#FAFAD2",
-                "endColor": "#FDFDE9",
-                "centerColor": "#FDFDE9"
+                "startColor": "#C3E8EC",
+                "endColor": "#EAF7F8"
             }
         },
         "body": {
@@ -1118,9 +1117,8 @@ def choose_form():
             "background": {
                 "type": "linearGradient",
                 "angle": "0deg",
-                "startColor": "#FAFAD2",
-                "endColor": "#FDFDE9",
-                "centerColor": "#FAFAD2"
+                "startColor": "#C3E8EC",
+                "endColor": "#EAF7F8"
             }
         }
     }
